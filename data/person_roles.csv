@@ -2,3 +2,10 @@ assertion_id,person_id,org_id,assertion_type,role_text_he,start_date,end_date,so
 assertion-angel-yaron-holding,person-angel-yaron,,material_holding,דווח כבעל מניות המחזיק בכ־22.61% מהון המניות המונפק והנפרע של שלמה א. אנג'ל בע״מ נכון לדיווח מיום 10 ביוני 2024,,,src-maya-angel-yaron-2024,2026-07-27,verified
 assertion-marom-adi-holding,person-marom-adi,,material_holding,דווח כבעלים המלא של Global Village Advisory Ltd. וכחלק מדבוקת השליטה באידומו בע״מ לפי דיווח מיום 14 בדצמבר 2021,,,src-maya-adi-marom-2021,2026-07-27,verified
 assertion-amon-yariv-position,person-amon-yariv,,position,מנהל את גלריה גורדון לאמנות בתל אביב מאז 2004 לפי ביוגרפיה מוסדית של הבית לצילום במוז״א,2004-01-01,,src-eretzmuseum-amon-yariv,2026-07-27,verified
+assertion-akirov-alrov-chair,person-a920caafdede,,position,יו״ר דירקטוריון אלרוב נדל״ן ומלונאות לפי דיווח החברה מיום 22 בנובמבר 2023,,,src-maya-akirov-alrov-2023,2026-07-27,verified
+assertion-nacht-check-point-founder,person-69f638f58c15,,founder,ממייסדי צ׳ק פוינט לפי פרסום משרד הכלכלה על אות סחר החוץ לשנת 2008,,,src-gov-check-point-founders-2008,2026-07-27,verified
+assertion-bennett-prime-minister,person-71d8f7e8d2c6,,other_documented,כיהן כראש ממשלת ישראל בשנים 2021–2022 לפי אתר משרד ראש הממשלה,2021-06-13,2022-07-01,src-pmo-bennett-prime-minister,2026-07-27,verified
+assertion-manelis-public-roles,person-8948ee9aee08,,other_documented,כיהן כדובר צה״ל וכמנכ״ל המשרד לעניינים אסטרטגיים לפי הודעת ועדת החוץ והביטחון מיום 27 במאי 2021,,,src-knesset-manelis-2021,2026-07-27,verified
+assertion-shoham-stanford-ai21,person-17d0f14452a4,,founder,פרופסור אמריטוס למדעי המחשב באוניברסיטת סטנפורד וממייסדי AI21 Labs לפי הביוגרפיה המוסדית של Stanford,,,src-stanford-yoav-shoham,2026-07-27,verified
+assertion-lowy-westfield-founder,person-16ff61c4363c,,founder,מייסד-שותף של Westfield וכיהן יו״ר החברה לפי הביוגרפיה המוסדית של Lowy Institute,1960-01-01,2018-01-01,src-lowy-institute-frank-lowy,2026-07-27,verified
+assertion-raz-levy-google-policy,person-b46bfa33676f,,position,עבדה במשך עשור ב-Google בתחומי ממשל ומדיניות ציבורית לפי הביוגרפיה המוסדית של פורום דבורה,,,src-forum-dvorah-donna-raz-levy,2026-07-27,verified

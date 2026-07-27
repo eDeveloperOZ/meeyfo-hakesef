@@ -104,6 +104,11 @@ export function validateDataset(dataset: Dataset): string[] {
   );
   assertUnique(
     errors,
+    "profile_checks",
+    dataset.profileChecks.map((check) => check.person_id),
+  );
+  assertUnique(
+    errors,
     "sources",
     dataset.sources.map((source) => source.source_id),
   );
@@ -208,6 +213,58 @@ export function validateDataset(dataset: Dataset): string[] {
     }
     if (!sourceById.has(assertion.source_id)) {
       errors.push(`${assertion.assertion_id}: missing source ${assertion.source_id}`);
+    }
+  }
+
+  const assertionPersonIds = new Set(dataset.personRoles.map((assertion) => assertion.person_id));
+  const externalLinkPersonIds = new Set(
+    dataset.externalLinks.map((link) => link.person_id).filter(Boolean),
+  );
+  const profileCheckByPersonId = new Map(
+    dataset.profileChecks.map((check) => [check.person_id, check]),
+  );
+  const totalsByPersonId = new Map<string, { total: number; hasGuarantee: boolean }>();
+  for (const record of dataset.financingRecords) {
+    if (!record.person_id || record.status === "returned" || record.status === "superseded") {
+      continue;
+    }
+    const current = totalsByPersonId.get(record.person_id) ?? {
+      total: 0,
+      hasGuarantee: false,
+    };
+    current.total += record.amount_agorot;
+    current.hasGuarantee ||= record.category === "guarantee";
+    totalsByPersonId.set(record.person_id, current);
+  }
+
+  for (const check of dataset.profileChecks) {
+    if (!personIds.has(check.person_id)) {
+      errors.push(`profile_checks: missing person ${check.person_id}`);
+    }
+    if (check.outcome === "enriched" && !assertionPersonIds.has(check.person_id)) {
+      errors.push(`${check.person_id}: enriched profile check requires a sourced assertion`);
+    }
+    if (check.outcome === "links_only" && !externalLinkPersonIds.has(check.person_id)) {
+      errors.push(`${check.person_id}: links-only profile check requires an external link`);
+    }
+  }
+
+  for (const [personId, totals] of totalsByPersonId) {
+    const isTier1 = totals.hasGuarantee || totals.total >= 5_000_000;
+    const isTier2 = !isTier1 && totals.total >= 1_000_000;
+    if (!isTier1 && !isTier2) continue;
+    const check = profileCheckByPersonId.get(personId);
+    if (!check) {
+      errors.push(`${personId}: missing Tier-1/Tier-2 profile check`);
+      continue;
+    }
+    if (
+      isTier1 &&
+      !assertionPersonIds.has(personId) &&
+      check.outcome !== "no_reliable_match" &&
+      check.outcome !== "ambiguous_identity"
+    ) {
+      errors.push(`${personId}: Tier-1 profile requires an assertion or a documented no-match`);
     }
   }
 

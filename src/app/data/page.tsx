@@ -66,6 +66,11 @@ export default function DataPage() {
           <strong>Manifest</strong>
           <span>גרסה, ספירות ורשימת קבצים במבנה JSON</span>
         </a>
+        <a className="download-card" href="/data/profile_checks.csv" download>
+          <Download aria-hidden="true" />
+          <strong>בדיקות כיסוי לפרופילים</strong>
+          <span>תאריך, מקורות שנבדקו ותוצאת ההתאמה לכל אדם בשכבות הכיסוי</span>
+        </a>
       </section>
 
       <section className="rendered-markdown" aria-labelledby="dictionary-title">
