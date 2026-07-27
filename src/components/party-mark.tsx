@@ -2,11 +2,6 @@ import { siteConfig } from "../../config/site";
 import type { Party } from "../../schemas";
 
 export function PartyMark({ party, size = "medium" }: { party: Party; size?: "small" | "medium" }) {
-  const initials = party.name_he
-    .replace(/[!״"׳'\-–]/g, "")
-    .trim()
-    .slice(0, 2);
-
   if (siteConfig.partyLogosEnabled && party.logo_file) {
     return (
       // Logo files remain disabled until the owner approves them after legal review.
@@ -22,12 +17,8 @@ export function PartyMark({ party, size = "medium" }: { party: Party; size?: "sm
   }
 
   return (
-    <span
-      className={`party-mark party-logo-${size}`}
-      aria-hidden="true"
-      style={{ "--party-color": party.brand_color || "#315f5a" } as React.CSSProperties}
-    >
-      {initials}
+    <span className={`party-mark party-logo-${size}`} aria-hidden="true">
+      {party.mark_he}
     </span>
   );
 }

@@ -40,6 +40,7 @@ function party(party_id: string, axis_position_id: string): Party {
     eligibility_source_id: "source",
     website_url: "",
     logo_file: "",
+    mark_he: party_id.slice(0, 3).padEnd(2, "x"),
     brand_color: "#000000",
     axis_position_id,
     notes: "",

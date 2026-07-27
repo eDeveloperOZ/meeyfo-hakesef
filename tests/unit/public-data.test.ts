@@ -42,6 +42,7 @@ describe("public CSV", () => {
           eligibility_source_id: "s",
           website_url: "",
           logo_file: "",
+          mark_he: "בדק",
           brand_color: "#000000",
           axis_position_id: "a",
           notes: "",

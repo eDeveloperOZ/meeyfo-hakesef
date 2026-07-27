@@ -11,6 +11,7 @@ export const partySchema = z.object({
   eligibility_source_id: idSchema,
   website_url: urlOrEmptySchema,
   logo_file: optionalStringSchema,
+  mark_he: z.string().trim().min(2).max(3),
   brand_color: z.union([z.string().regex(/^#[0-9A-Fa-f]{6}$/), z.literal("")]).default(""),
   axis_position_id: idSchema,
   notes: optionalStringSchema,

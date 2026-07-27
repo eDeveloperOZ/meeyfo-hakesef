@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Hebrew } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
 import { Footer } from "../components/footer";
 import { SiteHeader } from "../components/site-header";
 import { siteConfig } from "../../config/site";
 import "./globals.css";
 
-const notoSansHebrew = Noto_Sans_Hebrew({
-  subsets: ["hebrew"],
+const notoSansHebrew = localFont({
+  src: "../../public/fonts/NotoSansHebrew-Variable.ttf",
+  weight: "400 800",
   variable: "--font-hebrew",
   display: "swap",
 });
