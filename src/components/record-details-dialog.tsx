@@ -97,6 +97,10 @@ export function RecordDetailsDialog({
               <dt>צפוי פירעון</dt>
               <dd>{record.repayment_expected ? "כן" : "לא"}</dd>
             </div>
+            <div>
+              <dt>בתקופת הבחירות הרשמית</dt>
+              <dd>{record.in_statutory_election_period ? "כן" : "לא"}</dd>
+            </div>
           </dl>
           {record.notes && <p className="record-note">{record.notes}</p>}
           <a

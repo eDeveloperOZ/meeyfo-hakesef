@@ -14,6 +14,7 @@ const valid = {
   cash_received: "true",
   contingent: "false",
   repayment_expected: "false",
+  in_statutory_election_period: "true",
   status: "active",
   source_id: "source-1",
   official_record_id: "",

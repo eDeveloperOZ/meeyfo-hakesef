@@ -12,8 +12,12 @@ const inflowCategories = new Set<FinancingCategory>([
 const excludedStatuses = new Set(["returned", "superseded"]);
 
 export type FinancialSummary = {
-  reportedInflows: number;
+  reportedIncome: number;
+  reportedCashInflows: number;
   reportedGuarantees: number;
+  statutoryIncome: number;
+  statutoryCashInflows: number;
+  statutoryGuarantees: number;
   reportedLiabilities: number;
   netPosition: number | null;
   categoryTotals: Record<FinancingCategory, number | null>;
@@ -32,7 +36,7 @@ export function calculateFinancialSummary(
   scope: PartyFinancialScope,
 ): FinancialSummary {
   const active = activeRecords(records);
-  const reportedInflows = sumAmounts(
+  const reportedCashInflows = sumAmounts(
     active.filter((record) => record.cash_received && inflowCategories.has(record.category)),
   );
   const reportedGuarantees = sumAmounts(
@@ -44,6 +48,20 @@ export function calculateFinancialSummary(
   const reportedLiabilities = sumAmounts(
     active.filter((record) => record.category === "debt_liability"),
   );
+  const statutoryRecords = active.filter((record) => record.in_statutory_election_period);
+  const statutoryCashInflows = sumAmounts(
+    statutoryRecords.filter(
+      (record) => record.cash_received && inflowCategories.has(record.category),
+    ),
+  );
+  const statutoryGuarantees = sumAmounts(
+    statutoryRecords.filter(
+      (record) =>
+        record.category === "guarantee" && record.status === "active" && record.contingent,
+    ),
+  );
+  const reportedIncome = reportedCashInflows + reportedGuarantees;
+  const statutoryIncome = statutoryCashInflows + statutoryGuarantees;
   const categories: FinancingCategory[] = [
     "donation",
     "guarantee",
@@ -62,10 +80,14 @@ export function calculateFinancialSummary(
   ) as Record<FinancingCategory, number | null>;
 
   return {
-    reportedInflows,
+    reportedIncome,
+    reportedCashInflows,
     reportedGuarantees,
+    statutoryIncome,
+    statutoryCashInflows,
+    statutoryGuarantees,
     reportedLiabilities,
-    netPosition: scope.net_position_comparable ? reportedInflows - reportedLiabilities : null,
+    netPosition: scope.net_position_comparable ? reportedIncome - reportedLiabilities : null,
     categoryTotals,
   };
 }

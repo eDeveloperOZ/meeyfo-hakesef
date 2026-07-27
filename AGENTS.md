@@ -17,7 +17,9 @@ For a data update, follow `docs/runbooks/data-refresh.md` exactly.
 2. Every official party-site link must use `ExternalPartyLink`.
 3. Never infer causation between a donor, guarantor, lender, business role, and party policy.
 4. Distinguish money received, credit, guarantees, public financing, and liabilities.
-5. A guarantee is never included in received-money totals.
+5. A guarantee is not cash received, but by owner decision it is included in the site's
+   “reported income” headline. Always show the guarantee subtotal separately and label it as
+   contingent so the convention cannot be mistaken for a cash total.
 6. The Economic Party is a disclosed owner exception to inclusion, not to source quality.
 7. Run `npm run lint:neutrality` for every editorial or data-note change.
 

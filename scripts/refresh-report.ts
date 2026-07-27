@@ -107,6 +107,20 @@ try {
 }
 
 const now = new Date().toISOString();
+let excludedEntities: {
+  sourcePartyName: string;
+  recordCount: number;
+  amountAgorot: number;
+  reasonHe: string;
+}[] = [];
+try {
+  const reconciliation = JSON.parse(
+    readFileSync(join("docs", "reports", "data-scope-reconciliation-2026-07-27.json"), "utf8"),
+  ) as { excludedEntities?: typeof excludedEntities };
+  excludedEntities = reconciliation.excludedEntities ?? [];
+} catch {
+  excludedEntities = [];
+}
 const report = {
   generatedAt: now,
   datasetVersion: dataset.release.version,
@@ -121,6 +135,7 @@ const report = {
   brokenLinks,
   ambiguousRecords,
   rejectedUnofficial,
+  excludedEntities,
 };
 
 const date = now.slice(0, 10);
@@ -148,7 +163,19 @@ const hebrew = [
   `- קישורים הדורשים בדיקה: ${brokenLinks.length}`,
   `- רשומות עמומות לבדיקת בעלים: ${ambiguousRecords.length}`,
   `- מקורות שנדחו כמקורות מימון: ${rejectedUnofficial.length}`,
+  `- ישויות מהיצוא שהוחרגו לפי כלל ההכללה: ${excludedEntities.length}`,
   "",
+  ...(excludedEntities.length > 0
+    ? [
+        "## ישויות שהוחרגו מהיצוא",
+        "",
+        ...excludedEntities.map(
+          (entity) =>
+            `- ${entity.sourcePartyName}: ${entity.recordCount} רשומות, ${entity.amountAgorot} אגורות — ${entity.reasonHe}.`,
+        ),
+        "",
+      ]
+    : []),
   "אין לפרסם רשומה עמומה או מקור לא־רשמי לפני בדיקת בעל הפרויקט.",
   "",
 ];

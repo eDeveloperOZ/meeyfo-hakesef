@@ -10,6 +10,7 @@ import {
   financingRecordSchema,
   organizationSchema,
   partyFinancialScopeSchema,
+  partyNameAliasSchema,
   partySchema,
   personRoleSchema,
   personSchema,
@@ -22,6 +23,7 @@ import {
   type Organization,
   type Party,
   type PartyFinancialScope,
+  type PartyNameAlias,
   type Person,
   type PersonRole,
   type Source,
@@ -38,6 +40,7 @@ export type Dataset = {
   externalLinks: ExternalLink[];
   corrections: Correction[];
   partyFinancialScopes: PartyFinancialScope[];
+  partyNameAliases: PartyNameAlias[];
   release: DatasetRelease;
 };
 
@@ -77,6 +80,7 @@ export const csvContracts = {
     "cash_received",
     "contingent",
     "repayment_expected",
+    "in_statutory_election_period",
     "status",
     "source_id",
     "official_record_id",
@@ -132,6 +136,7 @@ export const csvContracts = {
     "checked_at",
     "note_he",
   ],
+  "party_name_aliases.csv": ["alias_name_he", "party_id", "basis_he", "source_id"],
 } as const;
 
 function parseCsv<T>(
@@ -184,6 +189,7 @@ export function loadDataset(root = process.cwd()): Dataset {
     externalLinks: parseCsv(root, "external_links.csv", externalLinkSchema),
     corrections: parseCsv(root, "corrections.csv", correctionSchema),
     partyFinancialScopes: parseCsv(root, "party_financial_scopes.csv", partyFinancialScopeSchema),
+    partyNameAliases: parseCsv(root, "party_name_aliases.csv", partyNameAliasSchema),
     release: datasetReleaseSchema.parse(releaseRaw),
   };
 }

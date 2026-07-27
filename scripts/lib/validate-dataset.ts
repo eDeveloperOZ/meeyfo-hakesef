@@ -1,4 +1,5 @@
 import type { Dataset, csvContracts } from "./load-data";
+import { election } from "../../config/election";
 
 const approvedFinancingAuthorities = new Set([
   "state_comptroller",
@@ -121,6 +122,11 @@ export function validateDataset(dataset: Dataset): string[] {
     "party_financial_scopes",
     dataset.partyFinancialScopes.map((scope) => scope.party_id),
   );
+  assertUnique(
+    errors,
+    "party_name_aliases",
+    dataset.partyNameAliases.map((alias) => alias.alias_name_he),
+  );
 
   const officialRecordIds = dataset.financingRecords
     .map((record) => record.official_record_id)
@@ -156,6 +162,12 @@ export function validateDataset(dataset: Dataset): string[] {
     }
     if (record.superseded_by && !recordIds.has(record.superseded_by)) {
       errors.push(`${record.record_id}: missing superseding record ${record.superseded_by}`);
+    }
+    if (record.in_statutory_election_period !== record.event_date >= election.cycleStartDate) {
+      errors.push(`${record.record_id}: in_statutory_election_period does not match event_date`);
+    }
+    if (record.event_date < election.scopeStartDate) {
+      errors.push(`${record.record_id}: event date predates the public measurement scope`);
     }
     const scope = scopeByPartyId.get(record.party_id);
     if (
@@ -219,6 +231,15 @@ export function validateDataset(dataset: Dataset): string[] {
   for (const partyId of partyIds) {
     if (!dataset.partyFinancialScopes.some((scope) => scope.party_id === partyId)) {
       errors.push(`${partyId}: missing financial scope row`);
+    }
+  }
+
+  for (const alias of dataset.partyNameAliases) {
+    if (!partyIds.has(alias.party_id)) {
+      errors.push(`party_name_aliases: missing party ${alias.party_id}`);
+    }
+    if (!sourceById.has(alias.source_id)) {
+      errors.push(`party_name_aliases: missing source ${alias.source_id}`);
     }
   }
 
