@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { loadDataset } from "./lib/load-data";
+import { classifyHttpStatus } from "./lib/link-state";
 
 type LinkState =
   | "available"
@@ -10,6 +11,8 @@ type LinkState =
   | "robots_disallowed"
   | "robots_unknown"
   | "manual_check_required"
+  | "blocked_bot"
+  | "unexpected_status"
   | "hash_mismatch";
 
 type LinkResult = {
@@ -128,17 +131,27 @@ async function checkSource(source: (typeof dataset.sources)[number]): Promise<Li
     const hash = createHash("sha256").update(bytes).digest("hex");
     const redirected = finalUrl !== source.url;
     const hashMismatch = Boolean(source.content_sha256 && source.content_sha256 !== hash);
+    const httpState = classifyHttpStatus(response.status);
     return {
       sourceId: source.source_id,
       url: source.url,
-      state: hashMismatch ? "hash_mismatch" : redirected ? "redirected" : "available",
+      state: hashMismatch
+        ? "hash_mismatch"
+        : httpState
+          ? httpState
+          : redirected
+            ? "redirected"
+            : "available",
       status: response.status,
       redirectTarget: redirected ? finalUrl : undefined,
       contentType: response.headers.get("content-type") ?? undefined,
       contentSha256: hash,
-      noteHe: response.ok
-        ? "הכתובת והמסמך זמינים. הבדיקה אינה מוכיחה תמיכה סמנטית בטענה."
-        : "השרת החזיר שגיאה.",
+      noteHe:
+        httpState === "blocked_bot"
+          ? "השרת חסם את הבדיקה האוטומטית; המקור נשמר ומסומן לאימות ידני."
+          : httpState === "unexpected_status"
+            ? "השרת החזיר סטטוס HTTP לא צפוי; המקור נשמר ומסומן לאימות ידני."
+            : "הכתובת והמסמך זמינים. הבדיקה אינה מוכיחה תמיכה סמנטית בטענה.",
     };
   } catch (error) {
     return {
@@ -180,16 +193,24 @@ async function main(): Promise<void> {
   ];
   writeFileSync(join(reportsDir, "link-check.he.md"), lines.join("\n"));
 
+  const manualReviewStates: LinkState[] = [
+    "manual_check_required",
+    "blocked_bot",
+    "unexpected_status",
+  ];
   const failures = results.filter((result) => {
     const source = dataset.sources.find((item) => item.source_id === result.sourceId)!;
     return (
       source.verification_status === "verified" &&
-      !["available", "redirected", "manual_check_required"].includes(result.state)
+      !["available", "redirected", ...manualReviewStates].includes(result.state)
     );
   });
+  const manualReviewCount = results.filter((result) =>
+    manualReviewStates.includes(result.state),
+  ).length;
 
   console.log(
-    `Checked ${results.length} sources: ${results.length - failures.length} usable, ${failures.length} requiring review.`,
+    `Checked ${results.length} sources: ${results.length - failures.length} retained, ${manualReviewCount} flagged for manual verification, ${failures.length} failed.`,
   );
   if (failures.length > 0) process.exit(1);
 }
