@@ -26,9 +26,23 @@ to the automated checker. The two cited filings were opened and semantically che
 regular browser. `check-links` therefore reports that host as `manual_check_required` instead
 of retrying or bypassing the restriction.
 
-States:
+Semantic verification states stored in `sources.csv`:
 
 - `verified`
 - `pending_semantic`
 - `unreachable_temp`
 - `superseded`
+
+HTTP link-check states stored in the generated report are separate:
+
+- `available` and `redirected` — an ordinary successful response;
+- `blocked_bot` — HTTP 401, 403 or 429 indicates an automated-access block;
+- `unexpected_status` — any response outside the accepted HTTP 200–226 range, including
+  non-standard responses such as 247;
+- `robots_disallowed` and `robots_unknown` — the automated check did not retrieve the target;
+- `manual_check_required` — the host is intentionally excluded from automated retrieval;
+- `unreachable` and `hash_mismatch` — retrieval failed or retrieved bytes differ from the
+  recorded fingerprint.
+
+`blocked_bot` and `unexpected_status` are explicit manual-verification flags. They never cause
+automatic source deletion and never masquerade as `available`.

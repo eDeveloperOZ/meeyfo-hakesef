@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-07-27T17:46:25.950Z",
-  "datasetVersion": "0.4.0",
+  "datasetVersion": "0.5.0",
   "records": {
     "added": [
       {
@@ -3178,6 +3178,35 @@
   "changedSourceUrls": [],
   "brokenLinks": [],
   "ambiguousRecords": [],
+  "eligibilityReview": {
+    "reviewedAt": "2026-07-27T21:25:00+03:00",
+    "pollBaseExpandedBeyondN12": true,
+    "outletsReviewed": ["N12", "חדשות 13", "כאן חדשות", "i24NEWS"],
+    "addedParties": [
+      {
+        "partyId": "balad",
+        "basisHe": "הופיעה בסקרי חדשות 13 מ־8.7.2026 ומ־15.7.2026; סקר כאן חדשות מ־19.7.2026 סיפק הצלבה נוספת",
+        "financingRecordsFound": 0
+      }
+    ],
+    "axisChanges": [
+      {
+        "partyId": "yashar",
+        "before": "off_axis",
+        "after": "center"
+      },
+      {
+        "partyId": "beyachad",
+        "before": "off_axis",
+        "after": "center"
+      },
+      {
+        "partyId": "balad",
+        "before": null,
+        "after": "left"
+      }
+    ]
+  },
   "rejectedUnofficial": [
     {
       "sourceId": "src-poll-n12-2026-07-06",

@@ -32,7 +32,12 @@ Wikipedia and personal sites may appear only as clearly marked external reading.
 Recognized polls and institutional research may support party eligibility or axis placement.
 They must never be used as financing evidence.
 
+The poll base is deliberately multi-outlet and follows `party-inclusion.md`. Institutional
+party profiles and published research may support the editorial axis only when the exact
+locator and the non-scientific nature of the placement are recorded.
+
 ## Retention
 
 Never delete a legitimate record because a URL is temporarily unavailable. Set the source
-state honestly and record the link-check result.
+state honestly and record the link-check result. Automated-access blocks and odd HTTP statuses
+must be reported as `blocked_bot` or `unexpected_status`, then checked manually.
