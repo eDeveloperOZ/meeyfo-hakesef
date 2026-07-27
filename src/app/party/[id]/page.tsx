@@ -3,12 +3,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AlertTriangle, ArrowLeft } from "lucide-react";
 import { AnalyticsPageEvent } from "../../../components/analytics";
+import { CategoryDistributionBar } from "../../../components/category-distribution-bar";
 import { ExternalPartyLink } from "../../../components/external-party-link";
-import { FinancingBreakdown } from "../../../components/financing-breakdown";
 import { MetricHeadline } from "../../../components/metric-headline";
+import { MonthlyFlowChart } from "../../../components/monthly-flow-chart";
 import { PartyMark } from "../../../components/party-mark";
 import { RecordsList } from "../../../components/records-list";
 import { SourceLink } from "../../../components/source-link";
+import { TopCounterpartiesChart } from "../../../components/top-counterparties-chart";
 import { TrackedExternalLink } from "../../../components/tracked-external-link";
 import { calculateFinancialSummary } from "../../../lib/finance";
 import { data, getParty, getPartyRecords, getPartyScope, getSource } from "../../../lib/data";
@@ -92,7 +94,17 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
       </header>
 
       <MetricHeadline summary={summary} scope={scope} />
-      <FinancingBreakdown summary={summary} />
+      <CategoryDistributionBar records={records} />
+      <TopCounterpartiesChart
+        records={records}
+        persons={data.persons}
+        organizations={data.organizations}
+      />
+      <MonthlyFlowChart
+        records={records}
+        startMonth="2022-11"
+        endMonth={data.release.releasedAt.slice(0, 7)}
+      />
       <RecordsList
         records={records}
         party={party}

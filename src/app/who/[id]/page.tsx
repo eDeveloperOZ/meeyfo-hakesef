@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BookOpen, Building2, ExternalLink, Globe2, Landmark } from "lucide-react";
 import type { ExternalLink as ExternalLinkRecord, FinancingRecord } from "../../../../schemas";
+import { PersonMiniBreakdown } from "../../../components/person-mini-breakdown";
 import { SourceLink } from "../../../components/source-link";
 import { data, getParty, getSource } from "../../../lib/data";
 import { formatAgorot, formatHebrewDate } from "../../../lib/format";
@@ -167,6 +168,8 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
           </ul>
         )}
       </section>
+
+      <PersonMiniBreakdown records={records} parties={data.parties} />
 
       <section aria-labelledby="assertions-title">
         <h2 id="assertions-title">עובדות עסקיות מתועדות</h2>
