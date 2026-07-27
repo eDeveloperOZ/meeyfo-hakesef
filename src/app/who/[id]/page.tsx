@@ -96,7 +96,10 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
     ...records.map((record) => record.source_id),
     ...assertions.map((assertion) => assertion.source_id),
   ]);
-  const roleSummaries = new Map<string, { partyId: string; category: FinancingRecord["category"]; amount: number }>();
+  const roleSummaries = new Map<
+    string,
+    { partyId: string; category: FinancingRecord["category"]; amount: number }
+  >();
   for (const record of records) {
     const key = `${record.party_id}:${record.category}`;
     const current = roleSummaries.get(key) ?? {
@@ -174,7 +177,10 @@ export default async function ProfilePage({ params }: { params: Promise<{ id: st
       <section aria-labelledby="assertions-title">
         <h2 id="assertions-title">עובדות עסקיות מתועדות</h2>
         {assertions.length === 0 ? (
-          <div className="profile-check-state" data-outcome={profileCheck?.outcome ?? "not_checked"}>
+          <div
+            className="profile-check-state"
+            data-outcome={profileCheck?.outcome ?? "not_checked"}
+          >
             {profileCheck?.outcome === "ambiguous_identity" ? (
               <p>
                 זהות לא חד־משמעית — לא פורסמו טענות. הפרופיל נבדק ב־

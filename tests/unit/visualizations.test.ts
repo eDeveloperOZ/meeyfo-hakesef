@@ -81,9 +81,7 @@ describe("visualization calculations", () => {
         record("a-guarantee", "a", "guarantee", 500_00, { person_id: "person-a" }),
         record("b-donation", "a", "donation", 300_00, { org_id: "org-b" }),
       ],
-      [
-        { person_id: "person-a", full_name_he: "אדם א", locality_he: "" },
-      ],
+      [{ person_id: "person-a", full_name_he: "אדם א", locality_he: "" }],
       [
         {
           org_id: "org-b",

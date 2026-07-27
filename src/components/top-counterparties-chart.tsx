@@ -23,9 +23,7 @@ export function TopCounterpartiesChart({
       <div className="section-heading">
         <p className="section-kicker">תרומות וערבויות · מהסכום הגבוה לנמוך</p>
         <h2 id="top-counterparties-title">הצדדים הגדולים שדווחו</h2>
-        <p>
-          עד עשרה אנשים או ארגונים לפי הסכום המצטבר שפורסם. ערבויות מוצגות בדוגמה נפרדת.
-        </p>
+        <p>עד עשרה אנשים או ארגונים לפי הסכום המצטבר שפורסם. ערבויות מוצגות בדוגמה נפרדת.</p>
       </div>
       {counterparties.length === 0 ? (
         <div className="chart-empty-state">לא דווחו צדדים שכנגד בתרומות או בערבויות.</div>

@@ -28,8 +28,8 @@ export default function HomePage() {
             <h1>{siteConfig.nameHe}</h1>
             <p className="hero-tagline">{siteConfig.taglineHe}</p>
             <p className="hero-description">
-              תמונת מצב נגישה של תרומות, ערבויות, הלוואות, מימון ציבורי וחובות — מתוך מקורות
-              רשמיים בלבד.
+              תמונת מצב נגישה של תרומות, ערבויות, הלוואות, מימון ציבורי וחובות — מתוך מקורות רשמיים
+              בלבד.
             </p>
             <div className="home-hero-actions">
               <a className="primary-button" href="#parties-title">

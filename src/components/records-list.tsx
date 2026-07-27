@@ -55,13 +55,13 @@ export function RecordsList({
             return (
               <li key={record.record_id} className="record-row">
                 <div>
+                  <strong>{formatAgorot(record.amount_agorot)}</strong>
                   <span className={`record-kind record-kind-${record.category}`}>
                     {categoryLabels[record.category]}
                   </span>
                   {record.in_statutory_election_period && (
                     <span className="statutory-period-badge">בתקופת הבחירות הרשמית</span>
                   )}
-                  <strong>{formatAgorot(record.amount_agorot)}</strong>
                   <span>{formatHebrewDate(record.event_date)}</span>
                 </div>
                 <div className="record-counterparty">

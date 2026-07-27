@@ -1,9 +1,6 @@
 import type { FinancingRecord } from "../../schemas";
 import { formatAgorot } from "../lib/format";
-import {
-  buildCategoryDistribution,
-  financingCategoryLabels,
-} from "../lib/visualizations";
+import { buildCategoryDistribution, financingCategoryLabels } from "../lib/visualizations";
 import { ChartDataTable } from "./chart-data-table";
 import { ChartLegend } from "./chart-legend";
 
@@ -27,9 +24,7 @@ export function CategoryDistributionBar({ records }: { records: FinancingRecord[
       <div className="section-heading">
         <p className="section-kicker">לפי סוג מקור</p>
         <h2 id="category-distribution-title">חלוקת המימון שדווח</h2>
-        <p>
-          התקבולים מוצגים בחלוקה של 100%; הערבויות מוצגות במסלול נפרד ואינן כסף שהתקבל.
-        </p>
+        <p>התקבולים מוצגים בחלוקה של 100%; הערבויות מוצגות במסלול נפרד ואינן כסף שהתקבל.</p>
       </div>
 
       <div className="category-chart-frame">
@@ -84,9 +79,7 @@ export function CategoryDistributionBar({ records }: { records: FinancingRecord[
         <div className="category-lane-heading">
           <strong>ערבויות — התחייבות מותנית</strong>
           <span>
-            {distribution.guarantees === null
-              ? "לא דווח"
-              : formatAgorot(distribution.guarantees)}
+            {distribution.guarantees === null ? "לא דווח" : formatAgorot(distribution.guarantees)}
           </span>
         </div>
         <svg
@@ -101,7 +94,12 @@ export function CategoryDistributionBar({ records }: { records: FinancingRecord[
           }
         >
           <defs>
-            <pattern id="category-guarantee-pattern" width="5" height="5" patternUnits="userSpaceOnUse">
+            <pattern
+              id="category-guarantee-pattern"
+              width="5"
+              height="5"
+              patternUnits="userSpaceOnUse"
+            >
               <rect width="5" height="5" className="chart-pattern-background" />
               <path d="M-1 5 5-1M2 8 8 2" className="chart-pattern-line" />
             </pattern>
@@ -145,9 +143,7 @@ export function CategoryDistributionBar({ records }: { records: FinancingRecord[
             key: "guarantee",
             cells: [
               financingCategoryLabels.guarantee,
-              distribution.guarantees === null
-                ? "לא דווח"
-                : formatAgorot(distribution.guarantees),
+              distribution.guarantees === null ? "לא דווח" : formatAgorot(distribution.guarantees),
               "לא חל",
               "התחייבות מותנית",
             ],

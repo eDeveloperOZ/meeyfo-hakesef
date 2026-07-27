@@ -32,14 +32,7 @@ export function DualHorizontalBar({
       <rect className="chart-track" x="0" y="2" width="100" height="9" rx="2" />
       <rect className="chart-cash-fill" x="0" y="2" width={cashWidth} height="9" rx="2" />
       <rect className="chart-track" x="0" y="17" width="100" height="9" rx="2" />
-      <rect
-        x="0"
-        y="17"
-        width={guaranteeWidth}
-        height="9"
-        rx="2"
-        fill={`url(#${patternId})`}
-      />
+      <rect x="0" y="17" width={guaranteeWidth} height="9" rx="2" fill={`url(#${patternId})`} />
     </svg>
   );
 }

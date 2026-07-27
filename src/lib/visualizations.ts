@@ -156,10 +156,7 @@ export function buildTopCounterparties(
   }
 
   return [...byCounterparty.values()]
-    .sort(
-      (left, right) =>
-        right.total - left.total || left.name.localeCompare(right.name, "he"),
-    )
+    .sort((left, right) => right.total - left.total || left.name.localeCompare(right.name, "he"))
     .slice(0, limit);
 }
 

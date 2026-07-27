@@ -1,4 +1,14 @@
 import type { Metadata } from "next";
+import {
+  BadgeDollarSign,
+  BookOpenCheck,
+  CalendarClock,
+  HandCoins,
+  Landmark,
+  Scale,
+  ShieldCheck,
+} from "lucide-react";
+import { ConceptCard } from "../../components/concept-card";
 import { PageIntro } from "../../components/page-intro";
 import { glossaryTerms } from "../../lib/glossary";
 
@@ -55,53 +65,80 @@ const expanded: Record<keyof typeof glossaryTerms, { explanation: string; exampl
   },
 };
 
+function glossaryIcon(id: string) {
+  if (id.includes("guarantee")) return <ShieldCheck />;
+  if (id === "donation" || id === "membershipFees") return <HandCoins />;
+  if (id === "publicFunding" || id === "knessetAdvance") return <Landmark />;
+  if (id === "repayment" || id === "debt" || id === "liability") {
+    return <BadgeDollarSign />;
+  }
+  return <BookOpenCheck />;
+}
+
 export default function GlossaryPage() {
   return (
     <div className="prose-page container">
       <PageIntro eyebrow="מילים לפני מספרים" title="מילון מושגים">
         <p>אותה מילה יכולה לשנות את משמעות המספר. כאן ההבדלים מוצגים בשפה פשוטה.</p>
       </PageIntro>
-      <div className="glossary-grid">
+      <div className="concept-grid glossary-grid">
         {Object.entries(glossaryTerms).map(([id, item]) => {
           const details = expanded[id as keyof typeof glossaryTerms];
           return (
-            <article id={id} key={id} className="glossary-entry">
+            <ConceptCard
+              id={id}
+              key={id}
+              icon={glossaryIcon(id)}
+              title={item.term}
+              lead={item.short}
+              detailsLabel="להגדרה ולדוגמה"
+            >
               <p className="term-nature">{item.nature}</p>
-              <h2>{item.term}</h2>
-              <p className="term-short">{item.short}</p>
               <p>{details.explanation}</p>
               <p className="neutral-example">{details.example}</p>
               <a href={lawUrl} target="_blank" rel="noopener noreferrer external">
                 למקור הרשמי <span className="sr-only">(נפתח בחלון חדש)</span>
               </a>
-            </article>
+            </ConceptCard>
           );
         })}
-        <article id="guarantee-vs-cash" className="glossary-entry">
+        <ConceptCard
+          id="guarantee-vs-cash"
+          icon={<ShieldCheck />}
+          title="ההבדל בין ערבות לכסף שהתקבל"
+          lead="ערבות מגינה על מלווה. הכסף שהתקבל הוא סכום שהועבר בפועל למפלגה."
+          detailsLabel="לדוגמה המלאה"
+        >
           <p className="term-nature">הבדל יסודי</p>
-          <h2>ההבדל בין ערבות לכסף שהתקבל</h2>
-          <p>ערבות מגינה על מלווה. הכסף שהתקבל הוא סכום שהועבר בפועל למפלגה.</p>
           <p className="neutral-example">
             דוגמה: הלוואה של 100 ₪ בערבות 100 ₪ היא תקבול מזומן של 100 ₪. בכותרת ההכנסה של האתר
             יוצגו 200 ₪ לפי כלל התצוגה, ומתוכם 100 ₪ יסומנו במפורש כערבות מותנית.
           </p>
-        </article>
-        <article id="non-additive" className="glossary-entry">
+        </ConceptCard>
+        <ConceptCard
+          id="non-additive"
+          icon={<Scale />}
+          title="למה אי־אפשר תמיד לחבר קטגוריות?"
+          lead="לפני חיבור סכומים צריך לוודא שהם חולקים היקף, מועד והגדרה."
+        >
           <p className="term-nature">טווח ומדידה</p>
-          <h2>למה אי־אפשר תמיד לחבר קטגוריות?</h2>
           <p>
             דוחות יכולים לכסות מועדים, ישויות והגדרות שונים. חיבורם עלול לערבב תקבול, אשראי
             והתחייבות.
           </p>
-        </article>
-        <article id="reporting-dates" className="glossary-entry">
+        </ConceptCard>
+        <ConceptCard
+          id="reporting-dates"
+          icon={<CalendarClock />}
+          title="מגבלות מועדי הדיווח הרשמיים"
+          lead="תמונת המצב יכולה להיות חלקית גם כשהיא מדויקת למועד הבדיקה."
+        >
           <p className="term-nature">מגבלת נתונים</p>
-          <h2>מגבלות מועדי הדיווח הרשמיים</h2>
           <p>
             חלק מהמידע מפורסם סמוך לאירוע וחלק רק לאחר הגשת חשבונות וביקורת. לכן תמונת המצב יכולה
             להיות חלקית גם כשהיא מדויקת למועד הבדיקה.
           </p>
-        </article>
+        </ConceptCard>
       </div>
     </div>
   );
