@@ -5,6 +5,7 @@ export * from "./external-link";
 export * from "./financing-record";
 export * from "./organization";
 export * from "./party";
+export * from "./party-name-alias";
 export * from "./party-financial-scope";
 export * from "./person";
 export * from "./person-role";

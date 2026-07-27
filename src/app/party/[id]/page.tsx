@@ -35,7 +35,7 @@ export async function generateMetadata({
   return party
     ? {
         title: party.name_he,
-        description: `מקורות המימון המדווחים של ${party.name_he} למחזור הבחירות לכנסת ה־26.`,
+        description: `מקורות המימון המדווחים של ${party.name_he} מאז הבחירות לכנסת ה־25.`,
       }
     : {};
 }
@@ -97,8 +97,8 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
           <h2 id="limitations-title">מגבלות ושלמות הנתונים</h2>
           <p>{scope.note_he}</p>
           <p>
-            ערבות מוצגת בנפרד ואינה נספרת ככסף שהתקבל. היעדר רשומה בקטגוריה מסוימת מסומן „לא דווח”
-            ולא כאפס.
+            ערבויות נכללות בכותרת ההכנסה המדווחת לפי החלטת הפרויקט, ומוצגות גם בנפרד כהתחייבות
+            מותנית שאינה מזומן שהתקבל. היעדר רשומה בקטגוריה מסוימת מסומן „לא דווח” ולא כאפס.
           </p>
           {party.notes && <p>{party.notes}</p>}
         </div>

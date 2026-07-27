@@ -13,6 +13,7 @@ const emptyDataset: Dataset = {
   externalLinks: [],
   corrections: [],
   partyFinancialScopes: [],
+  partyNameAliases: [],
   release: {
     version: "0.1.0",
     releasedAt: "2026-07-27T12:00:00+03:00",
@@ -60,6 +61,7 @@ describe("public CSV", () => {
           cash_received: true,
           contingent: false,
           repayment_expected: false,
+          in_statutory_election_period: true,
           status: "active",
           source_id: "s",
           official_record_id: "",

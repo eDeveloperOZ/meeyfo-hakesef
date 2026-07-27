@@ -32,6 +32,7 @@ export const financingRecordSchema = z
     cash_received: csvBooleanSchema,
     contingent: csvBooleanSchema,
     repayment_expected: csvBooleanSchema,
+    in_statutory_election_period: csvBooleanSchema,
     status: z.enum(["active", "returned", "exercised", "superseded"]),
     source_id: idSchema,
     official_record_id: optionalStringSchema,

@@ -1,37 +1,3178 @@
 {
-  "generatedAt": "2026-07-27T16:15:52.880Z",
-  "datasetVersion": "0.3.2",
+  "generatedAt": "2026-07-27T17:46:25.950Z",
+  "datasetVersion": "0.4.0",
   "records": {
-    "added": [],
-    "removed": [],
-    "modified": []
-  },
-  "sources": {
-    "added": [],
+    "added": [
+      {
+        "id": "rec-20260716-yashar-donation-faa81abc"
+      },
+      {
+        "id": "rec-20260715-yashar-guarantee-fef1ada6"
+      },
+      {
+        "id": "rec-20260715-yashar-guarantee-5f711d1a"
+      },
+      {
+        "id": "rec-20260715-yashar-donation-494c0fec"
+      },
+      {
+        "id": "rec-20260713-miluimnikim-donation-4ba0c659"
+      },
+      {
+        "id": "rec-20260713-yashar-donation-b4885f95"
+      },
+      {
+        "id": "rec-20260712-yashar-guarantee-d73627be"
+      },
+      {
+        "id": "rec-20260712-yashar-guarantee-7b5e3685"
+      },
+      {
+        "id": "rec-20260711-yashar-donation-08e568cb"
+      },
+      {
+        "id": "rec-20260711-yashar-donation-bafa4763"
+      },
+      {
+        "id": "rec-20260710-yashar-donation-3f37c4ab"
+      },
+      {
+        "id": "rec-20260710-yashar-donation-41db0e8e"
+      },
+      {
+        "id": "rec-20260710-yashar-donation-7c566869"
+      },
+      {
+        "id": "rec-20260709-miluimnikim-donation-b728335a"
+      },
+      {
+        "id": "rec-20260708-yashar-donation-56c87cd6"
+      },
+      {
+        "id": "rec-20260708-yashar-donation-9a5de052"
+      },
+      {
+        "id": "rec-20260708-yashar-donation-74d30b85"
+      },
+      {
+        "id": "rec-20260705-yashar-guarantee-c3f4aa49"
+      },
+      {
+        "id": "rec-20260705-yashar-donation-a13f9fb9"
+      },
+      {
+        "id": "rec-20260705-yashar-guarantee-d752e082"
+      },
+      {
+        "id": "rec-20260705-yashar-guarantee-17a6a475"
+      },
+      {
+        "id": "rec-20260703-yashar-donation-aef3ea4a"
+      },
+      {
+        "id": "rec-20260702-yashar-donation-3b5ae897"
+      },
+      {
+        "id": "rec-20260628-yashar-donation-a9c1dc7d"
+      },
+      {
+        "id": "rec-20260628-yashar-donation-2e5dd162"
+      },
+      {
+        "id": "rec-20260628-yashar-donation-0e2a421c"
+      },
+      {
+        "id": "rec-20260628-yashar-donation-574d5123"
+      },
+      {
+        "id": "rec-20260626-yashar-donation-c5f0bacf"
+      },
+      {
+        "id": "rec-20260626-yashar-donation-4190cb36"
+      },
+      {
+        "id": "rec-20260625-yashar-donation-0d5bd032"
+      },
+      {
+        "id": "rec-20260624-yashar-donation-2686828e"
+      },
+      {
+        "id": "rec-20260624-yashar-donation-264f3f6f"
+      },
+      {
+        "id": "rec-20260624-yashar-donation-cf27c694"
+      },
+      {
+        "id": "rec-20260624-yashar-donation-1a6cb818"
+      },
+      {
+        "id": "rec-20260624-miluimnikim-donation-8ca810c2"
+      },
+      {
+        "id": "rec-20260624-miluimnikim-guarantee-34e384a2"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-2648152e"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-bf165e7f"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-c49a4ba7"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-b58bd782"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-4c877f15"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-0d6c6209"
+      },
+      {
+        "id": "rec-20260622-miluimnikim-donation-aaeba8a8"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-1d131235"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-35cc16de"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-bcaf7596"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-bbdc4042"
+      },
+      {
+        "id": "rec-20260622-yashar-donation-66599241"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-bb9c9a5c"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-f3e89fd9"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-270c90a5"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-89f4db54"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-89e80ecf"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-723f957b"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-a9d91160"
+      },
+      {
+        "id": "rec-20260621-yashar-donation-eff7a04b"
+      },
+      {
+        "id": "rec-20260620-yashar-donation-3cce2e1f"
+      },
+      {
+        "id": "rec-20260620-miluimnikim-donation-b4d69954"
+      },
+      {
+        "id": "rec-20260620-yashar-donation-b438bbd4"
+      },
+      {
+        "id": "rec-20260618-yashar-donation-95b2c6f7"
+      },
+      {
+        "id": "rec-20260618-yashar-donation-fe4c04ec"
+      },
+      {
+        "id": "rec-20260617-yashar-donation-18d167fd"
+      },
+      {
+        "id": "rec-20260617-miluimnikim-donation-ed88b7d2"
+      },
+      {
+        "id": "rec-20260617-yashar-donation-03b97e6e"
+      },
+      {
+        "id": "rec-20260616-yashar-donation-ef619b82"
+      },
+      {
+        "id": "rec-20260615-yashar-donation-3229b953"
+      },
+      {
+        "id": "rec-20260615-yashar-donation-071341d3"
+      },
+      {
+        "id": "rec-20260615-miluimnikim-donation-04f8aa5d"
+      },
+      {
+        "id": "rec-20260615-yashar-donation-8e097fe0"
+      },
+      {
+        "id": "rec-20260612-yashar-donation-8b1a11f3"
+      },
+      {
+        "id": "rec-20260612-yashar-donation-57908a62"
+      },
+      {
+        "id": "rec-20260612-yashar-donation-d856189b"
+      },
+      {
+        "id": "rec-20260612-yashar-donation-0910a786"
+      },
+      {
+        "id": "rec-20260611-yashar-donation-ddad24cb"
+      },
+      {
+        "id": "rec-20260611-yashar-donation-4301183f"
+      },
+      {
+        "id": "rec-20260610-yashar-donation-8eeb082d"
+      },
+      {
+        "id": "rec-20260610-yashar-donation-51a5a65f"
+      },
+      {
+        "id": "rec-20260610-yashar-donation-39f78f29"
+      },
+      {
+        "id": "rec-20260610-yashar-donation-a24aec0f"
+      },
+      {
+        "id": "rec-20260608-yashar-donation-c0d8d4ef"
+      },
+      {
+        "id": "rec-20260607-miluimnikim-guarantee-6ec1fe25"
+      },
+      {
+        "id": "rec-20260607-yashar-donation-6adfd1c9"
+      },
+      {
+        "id": "rec-20260606-yashar-donation-00b93b5f"
+      },
+      {
+        "id": "rec-20260606-yashar-donation-78efeed3"
+      },
+      {
+        "id": "rec-20260605-yashar-donation-e61f737d"
+      },
+      {
+        "id": "rec-20260529-miluimnikim-donation-cb5130bd"
+      },
+      {
+        "id": "rec-20260528-miluimnikim-donation-cbe782c1"
+      },
+      {
+        "id": "rec-20260528-yashar-donation-fe03fcd6"
+      },
+      {
+        "id": "rec-20260527-yashar-donation-e33a602d"
+      },
+      {
+        "id": "rec-20260527-yashar-donation-2683f80c"
+      },
+      {
+        "id": "rec-20260527-miluimnikim-donation-fc393450"
+      },
+      {
+        "id": "rec-20260526-yashar-donation-d2dbfa27"
+      },
+      {
+        "id": "rec-20260526-miluimnikim-donation-4826e0ba"
+      },
+      {
+        "id": "rec-20260525-yashar-donation-7bf4f7bc"
+      },
+      {
+        "id": "rec-20260525-yashar-donation-5e072d43"
+      },
+      {
+        "id": "rec-20260525-yashar-donation-4315e2bc"
+      },
+      {
+        "id": "rec-20260524-yashar-donation-bb003761"
+      },
+      {
+        "id": "rec-20260524-yashar-donation-929afc13"
+      },
+      {
+        "id": "rec-20260524-yashar-donation-7e04116d"
+      },
+      {
+        "id": "rec-20260522-yashar-donation-0b783246"
+      },
+      {
+        "id": "rec-20260522-miluimnikim-donation-38f5178f"
+      },
+      {
+        "id": "rec-20260522-yashar-donation-b2ac5165"
+      },
+      {
+        "id": "rec-20260521-yashar-donation-6d1a7466"
+      },
+      {
+        "id": "rec-20260521-yashar-donation-fb9d1002"
+      },
+      {
+        "id": "rec-20260521-yashar-donation-2d4032cd"
+      },
+      {
+        "id": "rec-20260521-yashar-donation-3dd7f1e2"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-13f548de"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-232db9a6"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-ffdad014"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-fb86be4e"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-5d24b9e1"
+      },
+      {
+        "id": "rec-20260520-yashar-donation-0aff94be"
+      },
+      {
+        "id": "rec-20260519-yashar-donation-3cd557d5"
+      },
+      {
+        "id": "rec-20260519-yashar-donation-dec6dc15"
+      },
+      {
+        "id": "rec-20260519-yashar-donation-3fe7b34e"
+      },
+      {
+        "id": "rec-20260519-yashar-donation-bfb65434"
+      },
+      {
+        "id": "rec-20260518-yashar-donation-ca1d2bce"
+      },
+      {
+        "id": "rec-20260518-yashar-donation-cc2264c5"
+      },
+      {
+        "id": "rec-20260518-beyachad-guarantee-ca7c56d4"
+      },
+      {
+        "id": "rec-20260518-yashar-donation-6cfb0301"
+      },
+      {
+        "id": "rec-20260518-miluimnikim-donation-255aba37"
+      },
+      {
+        "id": "rec-20260517-miluimnikim-donation-8e37176b"
+      },
+      {
+        "id": "rec-20260517-miluimnikim-donation-4012c517"
+      },
+      {
+        "id": "rec-20260515-yashar-donation-012d39cf"
+      },
+      {
+        "id": "rec-20260514-yashar-donation-c1887cb7"
+      },
+      {
+        "id": "rec-20260514-yashar-donation-86f424b4"
+      },
+      {
+        "id": "rec-20260513-yashar-donation-2118b931"
+      },
+      {
+        "id": "rec-20260513-yashar-guarantee-b0fcb25d"
+      },
+      {
+        "id": "rec-20260511-yashar-donation-aac8a6c3"
+      },
+      {
+        "id": "rec-20260511-miluimnikim-donation-a289fa5c"
+      },
+      {
+        "id": "rec-20260511-yashar-donation-c1c56f32"
+      },
+      {
+        "id": "rec-20260510-yisrael-beiteinu-donation-a55738fc"
+      },
+      {
+        "id": "rec-20260509-miluimnikim-donation-7dd92fd7"
+      },
+      {
+        "id": "rec-20260508-miluimnikim-donation-e8a6eeaf-1"
+      },
+      {
+        "id": "rec-20260508-miluimnikim-donation-e8a6eeaf-2"
+      },
+      {
+        "id": "rec-20260508-miluimnikim-donation-a24ee5e5"
+      },
+      {
+        "id": "rec-20260508-miluimnikim-donation-47dfc94c"
+      },
+      {
+        "id": "rec-20260507-miluimnikim-donation-233374ce"
+      },
+      {
+        "id": "rec-20260504-yashar-donation-52105bb7"
+      },
+      {
+        "id": "rec-20260504-yashar-donation-cb98590b"
+      },
+      {
+        "id": "rec-20260504-yashar-donation-d801ffd6"
+      },
+      {
+        "id": "rec-20260503-yashar-donation-bfa7f472"
+      },
+      {
+        "id": "rec-20260430-yashar-donation-00bfbd46"
+      },
+      {
+        "id": "rec-20260429-yashar-guarantee-ab04ffd2"
+      },
+      {
+        "id": "rec-20260429-miluimnikim-donation-f7c70742"
+      },
+      {
+        "id": "rec-20260428-yashar-donation-b2cd5973"
+      },
+      {
+        "id": "rec-20260428-yashar-donation-94411704"
+      },
+      {
+        "id": "rec-20260428-yashar-donation-70c8b8c2"
+      },
+      {
+        "id": "rec-20260428-beyachad-guarantee-00a07745"
+      },
+      {
+        "id": "rec-20260427-yashar-guarantee-e2aad312"
+      },
+      {
+        "id": "rec-20260427-yashar-guarantee-0cb23c93"
+      },
+      {
+        "id": "rec-20260416-beyachad-donation-7d75edae"
+      },
+      {
+        "id": "rec-20260415-yashar-donation-af7e7d7b"
+      },
+      {
+        "id": "rec-20260415-beyachad-donation-118da72c"
+      },
+      {
+        "id": "rec-20260415-yashar-donation-9f566af0"
+      },
+      {
+        "id": "rec-20260414-yashar-donation-83e988bc"
+      },
+      {
+        "id": "rec-20260413-yashar-donation-e795de72"
+      },
+      {
+        "id": "rec-20260412-yashar-donation-09baa653"
+      },
+      {
+        "id": "rec-20260410-miluimnikim-donation-30b44b62"
+      },
+      {
+        "id": "rec-20260402-yashar-donation-cb654877"
+      },
+      {
+        "id": "rec-20260330-yashar-donation-00c957d5"
+      },
+      {
+        "id": "rec-20260330-miluimnikim-guarantee-62008e58"
+      },
+      {
+        "id": "rec-20260328-yashar-donation-0ed7c658"
+      },
+      {
+        "id": "rec-20260324-yashar-donation-f05047e7"
+      },
+      {
+        "id": "rec-20260324-yashar-donation-edce7e20"
+      },
+      {
+        "id": "rec-20260322-miluimnikim-guarantee-94e45e57"
+      },
+      {
+        "id": "rec-20260319-yashar-donation-722df13b"
+      },
+      {
+        "id": "rec-20260319-beyachad-guarantee-bf29eddf"
+      },
+      {
+        "id": "rec-20260317-yashar-donation-59ed89fc"
+      },
+      {
+        "id": "rec-20260317-yashar-donation-294f265c"
+      },
+      {
+        "id": "rec-20260316-yashar-donation-8b26ab88"
+      },
+      {
+        "id": "rec-20260315-yashar-donation-b18d7de5"
+      },
+      {
+        "id": "rec-20260305-yisrael-beiteinu-donation-6b50f263"
+      },
+      {
+        "id": "rec-20260304-yashar-donation-74758fc4"
+      },
+      {
+        "id": "rec-20260226-yashar-donation-45591fd9"
+      },
+      {
+        "id": "rec-20260225-beyachad-donation-673a68a2"
+      },
+      {
+        "id": "rec-20260225-beyachad-donation-d38b1aeb"
+      },
+      {
+        "id": "rec-20260225-yesh-atid-donation-f7d2940d"
+      },
+      {
+        "id": "rec-20260225-yashar-donation-28947215"
+      },
+      {
+        "id": "rec-20260225-yashar-guarantee-02ed3329"
+      },
+      {
+        "id": "rec-20260224-yashar-guarantee-d7574dba"
+      },
+      {
+        "id": "rec-20260224-yashar-donation-e85decb9"
+      },
+      {
+        "id": "rec-20260223-yashar-donation-81669ca0"
+      },
+      {
+        "id": "rec-20260223-yashar-donation-4a1a5bff"
+      },
+      {
+        "id": "rec-20260223-beyachad-guarantee-89c9f07f"
+      },
+      {
+        "id": "rec-20260222-yashar-donation-88614dc0"
+      },
+      {
+        "id": "rec-20260222-yashar-guarantee-b4b738c2"
+      },
+      {
+        "id": "rec-20260222-yashar-donation-408d9709"
+      },
+      {
+        "id": "rec-20260222-yashar-donation-b19ebdd8"
+      },
+      {
+        "id": "rec-20260222-yashar-guarantee-36bd5369"
+      },
+      {
+        "id": "rec-20260222-yashar-guarantee-8eff11b8"
+      },
+      {
+        "id": "rec-20260222-yisrael-beiteinu-donation-e87cb933"
+      },
+      {
+        "id": "rec-20260222-yashar-donation-5bc6af3f"
+      },
+      {
+        "id": "rec-20260222-yashar-donation-b9355238"
+      },
+      {
+        "id": "rec-20260221-beyachad-donation-c5c092f3"
+      },
+      {
+        "id": "rec-20260221-yashar-donation-7cafa25d"
+      },
+      {
+        "id": "rec-20260221-yashar-donation-f78f05b8"
+      },
+      {
+        "id": "rec-20260220-yashar-donation-101140df"
+      },
+      {
+        "id": "rec-20260220-yashar-donation-e80d0ecb"
+      },
+      {
+        "id": "rec-20260219-economic-party-donation-98bf1dec"
+      },
+      {
+        "id": "rec-20260219-miluimnikim-donation-53184ddb"
+      },
+      {
+        "id": "rec-20260218-miluimnikim-donation-cd4f051a"
+      },
+      {
+        "id": "rec-20260218-yashar-guarantee-3bc5e4e8"
+      },
+      {
+        "id": "rec-20260217-economic-party-donation-620fd088"
+      },
+      {
+        "id": "rec-20260216-yashar-donation-4a310784"
+      },
+      {
+        "id": "rec-20260213-yashar-donation-41c0b523"
+      },
+      {
+        "id": "rec-20260212-yashar-donation-e4b3fd0c"
+      },
+      {
+        "id": "rec-20260212-miluimnikim-guarantee-67078189"
+      },
+      {
+        "id": "rec-20260209-yashar-donation-045e08fa"
+      },
+      {
+        "id": "rec-20260209-beyachad-donation-2113b9a2"
+      },
+      {
+        "id": "rec-20260209-yashar-donation-2f0bb60c"
+      },
+      {
+        "id": "rec-20260208-yashar-guarantee-fbf29022"
+      },
+      {
+        "id": "rec-20260206-economic-party-donation-b717239c"
+      },
+      {
+        "id": "rec-20260205-yashar-guarantee-5c533dc4"
+      },
+      {
+        "id": "rec-20260205-yashar-donation-18e4cf28"
+      },
+      {
+        "id": "rec-20260205-yashar-guarantee-b881870f"
+      },
+      {
+        "id": "rec-20260205-yashar-donation-7bd4c73c"
+      },
+      {
+        "id": "rec-20260204-yashar-donation-b441c6ad"
+      },
+      {
+        "id": "rec-20260204-yashar-guarantee-4cf8b34b"
+      },
+      {
+        "id": "rec-20260204-yashar-donation-0260fe30"
+      },
+      {
+        "id": "rec-20260203-miluimnikim-guarantee-04781ae4"
+      },
+      {
+        "id": "rec-20260202-miluimnikim-guarantee-59547977"
+      },
+      {
+        "id": "rec-20260131-yashar-donation-9e62b183"
+      },
+      {
+        "id": "rec-20260130-beyachad-donation-32b95abb"
+      },
+      {
+        "id": "rec-20260130-yashar-donation-c97215a4"
+      },
+      {
+        "id": "rec-20260129-yashar-donation-3dfd2aef"
+      },
+      {
+        "id": "rec-20260129-beyachad-donation-1f3233ee"
+      },
+      {
+        "id": "rec-20260129-beyachad-donation-ff58e176"
+      },
+      {
+        "id": "rec-20260129-yashar-donation-e70b1c43"
+      },
+      {
+        "id": "rec-20260128-yashar-donation-e6171b45"
+      },
+      {
+        "id": "rec-20260127-yashar-donation-42dea0cc"
+      },
+      {
+        "id": "rec-20260127-miluimnikim-guarantee-4aac4735"
+      },
+      {
+        "id": "rec-20260126-yashar-donation-60c8a6bd"
+      },
+      {
+        "id": "rec-20260126-yashar-donation-d0f1bb73"
+      },
+      {
+        "id": "rec-20260126-beyachad-donation-382736db"
+      },
+      {
+        "id": "rec-20260126-beyachad-donation-3f9e59de"
+      },
+      {
+        "id": "rec-20260125-yashar-donation-43793b26"
+      },
+      {
+        "id": "rec-20260121-yashar-guarantee-855f014c"
+      },
+      {
+        "id": "rec-20260121-beyachad-donation-216a6684"
+      },
+      {
+        "id": "rec-20260121-miluimnikim-donation-554d3846"
+      },
+      {
+        "id": "rec-20260121-yashar-guarantee-79dffbd7"
+      },
+      {
+        "id": "rec-20260120-yashar-donation-c5e7317a"
+      },
+      {
+        "id": "rec-20260119-miluimnikim-donation-efc0de0b"
+      },
+      {
+        "id": "rec-20260118-yisrael-beiteinu-donation-04a01bf5"
+      },
+      {
+        "id": "rec-20260118-yisrael-beiteinu-donation-4a15810b"
+      },
+      {
+        "id": "rec-20260117-yashar-donation-b5ba23b7"
+      },
+      {
+        "id": "rec-20260114-yashar-donation-07d40e13"
+      },
+      {
+        "id": "rec-20260114-yisrael-beiteinu-donation-c248124c"
+      },
+      {
+        "id": "rec-20260114-yashar-donation-98254474"
+      },
+      {
+        "id": "rec-20260113-beyachad-donation-52bd7678"
+      },
+      {
+        "id": "rec-20260113-beyachad-guarantee-2e8b643f"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-0d0a1fe4"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-824d874f"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-c8b12577"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-3106a335"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-cdd67193"
+      },
+      {
+        "id": "rec-20260112-yashar-donation-5bf644b6"
+      },
+      {
+        "id": "rec-20260111-yisrael-beiteinu-donation-debf343f"
+      },
+      {
+        "id": "rec-20260111-beyachad-donation-9dade611"
+      },
+      {
+        "id": "rec-20260111-miluimnikim-donation-c5feaf4a"
+      },
+      {
+        "id": "rec-20260111-beyachad-donation-e45afbaf"
+      },
+      {
+        "id": "rec-20260110-yashar-donation-37e25b09"
+      },
+      {
+        "id": "rec-20260109-economic-party-donation-85fbac38"
+      },
+      {
+        "id": "rec-20260108-miluimnikim-donation-f1405ee7"
+      },
+      {
+        "id": "rec-20260108-yashar-donation-029bc96a"
+      },
+      {
+        "id": "rec-20260108-yashar-donation-8013dc65"
+      },
+      {
+        "id": "rec-20260108-beyachad-donation-5563d6cc"
+      },
+      {
+        "id": "rec-20260108-beyachad-donation-05a7ca91"
+      },
+      {
+        "id": "rec-20260106-economic-party-donation-aadd832b"
+      },
+      {
+        "id": "rec-20260106-yashar-donation-ab5eb9aa"
+      },
+      {
+        "id": "rec-20260106-yashar-donation-c13da571"
+      },
+      {
+        "id": "rec-20260105-yashar-donation-7605ffe7"
+      },
+      {
+        "id": "rec-20260105-miluimnikim-donation-056ed529"
+      },
+      {
+        "id": "rec-20260105-beyachad-donation-6be56066"
+      },
+      {
+        "id": "rec-20260104-beyachad-donation-dd54c0e1"
+      },
+      {
+        "id": "rec-20251230-beyachad-guarantee-3211ca0e"
+      },
+      {
+        "id": "rec-20251226-miluimnikim-donation-af788a6a"
+      },
+      {
+        "id": "rec-20251225-miluimnikim-donation-32cd99fc"
+      },
+      {
+        "id": "rec-20251225-yisrael-beiteinu-donation-36abc449"
+      },
+      {
+        "id": "rec-20251217-miluimnikim-donation-8722bf05"
+      },
+      {
+        "id": "rec-20251206-economic-party-donation-bc8d778e"
+      },
+      {
+        "id": "rec-20251203-economic-party-donation-d805ab56"
+      },
+      {
+        "id": "rec-20251203-yesh-atid-donation-ed400899"
+      },
+      {
+        "id": "rec-20251202-economic-party-donation-8808b632"
+      },
+      {
+        "id": "rec-20251201-economic-party-donation-23e315d3"
+      },
+      {
+        "id": "rec-20251130-economic-party-donation-cfd9362a"
+      },
+      {
+        "id": "rec-20251115-economic-party-donation-33e0d8e0"
+      },
+      {
+        "id": "rec-20251109-hadash-taal-donation-63b80839"
+      },
+      {
+        "id": "rec-20251107-economic-party-donation-849e336d"
+      },
+      {
+        "id": "rec-20251106-economic-party-donation-dd91f87d"
+      },
+      {
+        "id": "rec-20251030-economic-party-donation-95ed112a"
+      },
+      {
+        "id": "rec-20251015-economic-party-donation-3a73f285"
+      },
+      {
+        "id": "rec-20250917-yisrael-beiteinu-donation-e2bcd51f"
+      },
+      {
+        "id": "rec-20250915-economic-party-donation-8ee91702"
+      },
+      {
+        "id": "rec-20250914-yisrael-beiteinu-donation-85de0a1f"
+      },
+      {
+        "id": "rec-20250723-beyachad-guarantee-c134279a"
+      },
+      {
+        "id": "rec-20250723-beyachad-guarantee-fdbe0cde"
+      },
+      {
+        "id": "rec-20250723-beyachad-guarantee-20f69449"
+      },
+      {
+        "id": "rec-20250715-yisrael-beiteinu-donation-77a3b433"
+      },
+      {
+        "id": "rec-20250711-economic-party-donation-f8f9ed24"
+      },
+      {
+        "id": "rec-20250529-yisrael-beiteinu-donation-e45175b0"
+      },
+      {
+        "id": "rec-20250506-yisrael-beiteinu-donation-d0d97053"
+      },
+      {
+        "id": "rec-20250506-yisrael-beiteinu-donation-03b61890"
+      },
+      {
+        "id": "rec-20250420-hadash-taal-donation-f77ab4bd"
+      },
+      {
+        "id": "rec-20250331-yisrael-beiteinu-donation-1b8c6c77"
+      },
+      {
+        "id": "rec-20250313-yisrael-beiteinu-donation-1bf7fbeb"
+      },
+      {
+        "id": "rec-20250304-yisrael-beiteinu-donation-995c2d4e"
+      },
+      {
+        "id": "rec-20250213-yisrael-beiteinu-donation-c9628a43"
+      },
+      {
+        "id": "rec-20250211-yisrael-beiteinu-donation-4e8aeb1f"
+      },
+      {
+        "id": "rec-20250116-yisrael-beiteinu-donation-ec8a29e7"
+      },
+      {
+        "id": "rec-20250113-hadash-taal-donation-7cd8e18c"
+      },
+      {
+        "id": "rec-20250107-yashar-donation-55eafba9"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-4825968d"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-1659bc59"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-f1252f94"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-7b62234d"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-d4f827bd"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-4ae7f75d"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-7d23c610"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-4e632866"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-0ed58d07"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-d82c34f5"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-81128388"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-90c495da"
+      },
+      {
+        "id": "rec-20241231-democrats-donation-2e33b8ed"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-d67d0d5d"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-cfd6b2f4"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-ce180c96"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-32c046f5"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-1f7fd778"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-b4ca3e81"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-eb38533f"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-e8802b87"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-3c98ed7a"
+      },
+      {
+        "id": "rec-20241230-democrats-donation-d57a6b73"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-966381b0"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-79fbbf4e"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-3f7fe0dc"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-aa926db5"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-1369d096"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-ef0cc174"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-0a8f2e89"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-a2154295"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-a8f7c5f9"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-565ab7fc"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-106f1acb"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-a8967aae"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-ecd5935e"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-c312f962"
+      },
+      {
+        "id": "rec-20241229-democrats-donation-12d7eedd"
+      },
+      {
+        "id": "rec-20241228-democrats-donation-c73eb614"
+      },
+      {
+        "id": "rec-20241228-democrats-donation-e0e663c2"
+      },
+      {
+        "id": "rec-20241228-democrats-donation-78e12392"
+      },
+      {
+        "id": "rec-20241228-democrats-donation-1c285db4"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-e9391bff"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-2ab8145b"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-2ffd318f"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-ad503e2a"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-ae422bcc"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-2deb3ee2"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-f1510052"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-3e62cd0b"
+      },
+      {
+        "id": "rec-20241227-democrats-donation-08c61630"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-baf2e5f0"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-937bbf66"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-914d59fa"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-39ca7f97"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-4bd1e309"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-100a6433"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-2822d984"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-a9cdda26"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-36f81a10"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-8f1c066a"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-3bba7d77"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-fd26e593"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-488fdbad"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-e1b43420"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-207f15a9"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-9eb752fa"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-1e152b7c"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-d572772b"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-8a89f295"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-4756b784"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-59167c86"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-cb509ef9"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-75ac9dfa"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-1f1a95b7"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-e9467d90"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-a2a7254f"
+      },
+      {
+        "id": "rec-20241226-democrats-donation-1b24f282"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-053cc7cd"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-be2e28ac"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-6f698f2e"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-21168be4"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-2e83965a"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-819f0211"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-2ea94025"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-9f39405f"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-e365675e"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-bcb5672e"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-2aac0934"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-9ae525d1"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-3e874ce0"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-7cad211e"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-22928ab0"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-e578f674"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-f9ffcf89"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-fa17c1d7"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-d0103ee6"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-211ada0c"
+      },
+      {
+        "id": "rec-20241225-democrats-donation-34e27e7e"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-f7898692"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-460fb5be"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-19351188"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-de42fa37"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-293ae626"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-f37391d3"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-f4d5f2f5"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-04586dcb"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-77b0d37d"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-9c762c9e"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-62c2bf4c"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-c4d9505f"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-4a275b72"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-7abd5c8f"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-a5fef4ab"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-c4bee38b"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-54729672"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-9f09a9c2"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-a19983cc"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-5a86319f"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-69652398"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-e1a9f396"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-b1867e97"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-d2b600af"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-441d5024"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-fce9fa57"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-3692d986"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-32cf02ab"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-c6570f3b"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-125d9c1e"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-6fd09105"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-75f87504"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-ced16ae0"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-c7a3bdae"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-f7ff867a"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-8d161abf"
+      },
+      {
+        "id": "rec-20241224-democrats-donation-f289861a"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-753c2d92"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-9a77c07c"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-c7f62fcb"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-16144d65"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-0a6c981f"
+      },
+      {
+        "id": "rec-20241223-democrats-donation-848a981b"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-6227c407"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-0ad10df9"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-fd833435"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-7f4060c9"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-91debfb4"
+      },
+      {
+        "id": "rec-20241222-democrats-donation-02683d45"
+      },
+      {
+        "id": "rec-20241221-democrats-donation-1a580599"
+      },
+      {
+        "id": "rec-20241221-democrats-donation-fd99c678"
+      },
+      {
+        "id": "rec-20241221-democrats-donation-2a17e9f8"
+      },
+      {
+        "id": "rec-20241221-democrats-donation-3a8d44ac"
+      },
+      {
+        "id": "rec-20241221-democrats-donation-9657884c"
+      },
+      {
+        "id": "rec-20241220-democrats-donation-b88f2c6d"
+      },
+      {
+        "id": "rec-20241220-democrats-donation-cb67b614"
+      },
+      {
+        "id": "rec-20241220-democrats-donation-2367bd17"
+      },
+      {
+        "id": "rec-20241220-democrats-donation-47bb7440"
+      },
+      {
+        "id": "rec-20241220-democrats-donation-9202aa42"
+      },
+      {
+        "id": "rec-20241218-democrats-donation-3bdba2e6"
+      },
+      {
+        "id": "rec-20241218-democrats-donation-0618176a"
+      },
+      {
+        "id": "rec-20241218-democrats-donation-8888356c"
+      },
+      {
+        "id": "rec-20241218-democrats-donation-bec5124f"
+      },
+      {
+        "id": "rec-20241218-democrats-donation-5c5f1cdb"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-29c44a07"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-3c2373dd"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-4cfaba67"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-641bca3f"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-d4e0892c"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-138edc23"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-92c81b1c"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-48194fe2"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-c046773c"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-2a09eb7b"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-5323d1b2"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-5c8787ae"
+      },
+      {
+        "id": "rec-20241217-democrats-donation-14e281d5"
+      },
+      {
+        "id": "rec-20241216-democrats-donation-2dd88c2f"
+      },
+      {
+        "id": "rec-20241216-democrats-donation-8518995a"
+      },
+      {
+        "id": "rec-20241215-democrats-donation-79fb9f51"
+      },
+      {
+        "id": "rec-20241215-democrats-donation-e9c356cd"
+      },
+      {
+        "id": "rec-20241214-democrats-donation-e6426137"
+      },
+      {
+        "id": "rec-20241214-democrats-donation-609ab42c"
+      },
+      {
+        "id": "rec-20241213-democrats-donation-e6cb69fe"
+      },
+      {
+        "id": "rec-20241213-democrats-donation-f1353d6d"
+      },
+      {
+        "id": "rec-20241212-democrats-donation-120157a5"
+      },
+      {
+        "id": "rec-20241212-democrats-donation-c010605f"
+      },
+      {
+        "id": "rec-20241212-democrats-donation-4ea6e3c4"
+      },
+      {
+        "id": "rec-20241209-democrats-donation-87a016e8"
+      },
+      {
+        "id": "rec-20241201-hadash-taal-donation-2415a3e8"
+      },
+      {
+        "id": "rec-20241130-democrats-donation-86794372"
+      },
+      {
+        "id": "rec-20241129-democrats-donation-f64ccfdb"
+      },
+      {
+        "id": "rec-20241129-democrats-donation-a82be097"
+      },
+      {
+        "id": "rec-20241129-democrats-donation-319b7562"
+      },
+      {
+        "id": "rec-20241128-democrats-donation-3d2c46a5"
+      },
+      {
+        "id": "rec-20241128-democrats-donation-5312dd4c"
+      },
+      {
+        "id": "rec-20241128-democrats-donation-10297e98"
+      },
+      {
+        "id": "rec-20241128-democrats-donation-f0bae263"
+      },
+      {
+        "id": "rec-20241127-democrats-donation-f9eccff4"
+      },
+      {
+        "id": "rec-20241127-democrats-donation-0823b913"
+      },
+      {
+        "id": "rec-20241127-democrats-donation-84e79a98"
+      },
+      {
+        "id": "rec-20241127-democrats-donation-3f5be3a6"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-666e93bf"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-7956dd43"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-b5e56b9a"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-11a5ff37"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-33d032c3"
+      },
+      {
+        "id": "rec-20241126-democrats-donation-620b24c9"
+      },
+      {
+        "id": "rec-20241125-democrats-donation-7b5fcf41"
+      },
+      {
+        "id": "rec-20241125-democrats-donation-49954271"
+      },
+      {
+        "id": "rec-20241125-democrats-donation-b653a3ef"
+      },
+      {
+        "id": "rec-20241125-democrats-donation-492f70b9"
+      },
+      {
+        "id": "rec-20241125-democrats-donation-9463702a"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-a0d99b49"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-8eb7fc6f"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-13b5c110"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-9d3661a8"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-d2cdc120"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-1966bb28"
+      },
+      {
+        "id": "rec-20241124-democrats-donation-536c77b4"
+      },
+      {
+        "id": "rec-20241123-democrats-donation-cab0c426"
+      },
+      {
+        "id": "rec-20241123-democrats-donation-32eae946"
+      },
+      {
+        "id": "rec-20241122-democrats-donation-7e7a1b51"
+      },
+      {
+        "id": "rec-20241122-democrats-donation-5f4e7f92"
+      },
+      {
+        "id": "rec-20241121-democrats-donation-bc2e6c59"
+      },
+      {
+        "id": "rec-20241120-democrats-donation-34b9f3da"
+      },
+      {
+        "id": "rec-20241120-democrats-donation-b2f47b76"
+      },
+      {
+        "id": "rec-20241120-democrats-donation-7b4e72ff"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-5b7206f8"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-5798301b"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-253c45e6"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-1304c16e"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-a634ac29"
+      },
+      {
+        "id": "rec-20241118-democrats-donation-29b5b84d"
+      },
+      {
+        "id": "rec-20241117-democrats-donation-f33e246e"
+      },
+      {
+        "id": "rec-20241117-democrats-donation-25607424"
+      },
+      {
+        "id": "rec-20241114-democrats-donation-922773f9"
+      },
+      {
+        "id": "rec-20241113-democrats-donation-850b3d7d"
+      },
+      {
+        "id": "rec-20241113-democrats-donation-cae005b2"
+      },
+      {
+        "id": "rec-20241113-democrats-donation-f25b0662"
+      },
+      {
+        "id": "rec-20241112-democrats-donation-99343404"
+      },
+      {
+        "id": "rec-20241112-democrats-donation-61f882fc"
+      },
+      {
+        "id": "rec-20241112-democrats-donation-6caab716"
+      },
+      {
+        "id": "rec-20241112-democrats-donation-fcfe04f5"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-a9f31592"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-5688bc98"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-e99208fc"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-2a2aa4a2"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-d072edc7"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-4c1cd1f7"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-07945245"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-b2d54465"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-f169c8ae"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-8255a375"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-739257ff"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-81b50bd9"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-2212405e"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-49e23753"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-eff69125"
+      },
+      {
+        "id": "rec-20241109-democrats-donation-ae9b72db"
+      },
+      {
+        "id": "rec-20241101-hadash-taal-donation-67a0aeca"
+      },
+      {
+        "id": "rec-20241101-hadash-taal-donation-3613d9c6"
+      },
+      {
+        "id": "rec-20241031-democrats-donation-1f912555"
+      },
+      {
+        "id": "rec-20241030-democrats-donation-edc8eb10"
+      },
+      {
+        "id": "rec-20241029-democrats-donation-485b7f78"
+      },
+      {
+        "id": "rec-20241028-democrats-donation-570a4eb6"
+      },
+      {
+        "id": "rec-20241028-democrats-donation-f229f089"
+      },
+      {
+        "id": "rec-20241025-democrats-donation-abfd365f"
+      },
+      {
+        "id": "rec-20241024-democrats-donation-87960b47"
+      },
+      {
+        "id": "rec-20241023-democrats-donation-ddc3adeb"
+      },
+      {
+        "id": "rec-20241022-democrats-donation-ef24c9ef"
+      },
+      {
+        "id": "rec-20241021-democrats-donation-38ff76d0"
+      },
+      {
+        "id": "rec-20241021-democrats-donation-117c8956"
+      },
+      {
+        "id": "rec-20241021-democrats-donation-9360d64f"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-9b27ac9a"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-c0387063"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-c99f11cf"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-21e86228"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-03440470"
+      },
+      {
+        "id": "rec-20241020-democrats-donation-ce44f1c6"
+      },
+      {
+        "id": "rec-20241016-democrats-donation-3e6d1452"
+      },
+      {
+        "id": "rec-20241015-democrats-donation-b6176a59"
+      },
+      {
+        "id": "rec-20241015-democrats-donation-a3cb0281"
+      },
+      {
+        "id": "rec-20241013-likud-donation-fc44dac2"
+      },
+      {
+        "id": "rec-20241012-democrats-donation-bd7f285f"
+      },
+      {
+        "id": "rec-20241012-democrats-donation-47265307"
+      },
+      {
+        "id": "rec-20241011-democrats-donation-3ecf8442"
+      },
+      {
+        "id": "rec-20241011-democrats-donation-699511ee"
+      },
+      {
+        "id": "rec-20241010-democrats-donation-040d473f"
+      },
+      {
+        "id": "rec-20241010-democrats-donation-d29c5792"
+      },
+      {
+        "id": "rec-20241010-democrats-donation-072ae444"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-17d4afc6"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-093d73f3"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-06cfb50a"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-ab31a03a"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-57e0b7ac"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-9c8591ed"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-5df9ad54"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-1934b6a8"
+      },
+      {
+        "id": "rec-20241009-democrats-donation-5d0d50f7"
+      },
+      {
+        "id": "rec-20241008-yisrael-beiteinu-donation-cc6a10bb"
+      },
+      {
+        "id": "rec-20240930-democrats-donation-70560342"
+      },
+      {
+        "id": "rec-20240930-democrats-donation-c2550f43"
+      },
+      {
+        "id": "rec-20240929-democrats-donation-7f83743b"
+      },
+      {
+        "id": "rec-20240929-democrats-donation-0b2659b8"
+      },
+      {
+        "id": "rec-20240929-democrats-donation-8787347d"
+      },
+      {
+        "id": "rec-20240928-democrats-donation-823ecd36"
+      },
+      {
+        "id": "rec-20240928-democrats-donation-b75b5647"
+      },
+      {
+        "id": "rec-20240928-democrats-donation-d9dcfce4"
+      },
+      {
+        "id": "rec-20240928-democrats-donation-ec837460"
+      },
+      {
+        "id": "rec-20240927-democrats-donation-5c323277"
+      },
+      {
+        "id": "rec-20240927-democrats-donation-7b8add1d"
+      },
+      {
+        "id": "rec-20240926-democrats-donation-87c3aa41"
+      },
+      {
+        "id": "rec-20240926-democrats-donation-ea47d383"
+      },
+      {
+        "id": "rec-20240925-democrats-donation-0ae64ea4"
+      },
+      {
+        "id": "rec-20240925-democrats-donation-8bda116a"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-66c4e194"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-7156c097"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-13ad079f"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-3bf91936"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-7002b378"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-ec46d515"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-ccd78ab1"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-f03ec4db"
+      },
+      {
+        "id": "rec-20240924-democrats-donation-2944624f"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-2b54f89c"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-eec95315"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-022c7102"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-0db40ed6"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-33dc44f7"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-85ce2893"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-573f6170"
+      },
+      {
+        "id": "rec-20240923-democrats-donation-f7ed01b7"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-bcce2fc7"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-089c6ac2"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-95dda169"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-a3c19be3"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-1290836e"
+      },
+      {
+        "id": "rec-20240922-democrats-donation-10c38a88"
+      },
+      {
+        "id": "rec-20240921-democrats-donation-0aa6992c"
+      },
+      {
+        "id": "rec-20240921-democrats-donation-2f907492"
+      },
+      {
+        "id": "rec-20240921-democrats-donation-ba89557b"
+      },
+      {
+        "id": "rec-20240921-democrats-donation-55b99a54"
+      },
+      {
+        "id": "rec-20240920-democrats-donation-3778d392"
+      },
+      {
+        "id": "rec-20240920-democrats-donation-e97a0b0a"
+      },
+      {
+        "id": "rec-20240920-democrats-donation-59734a36"
+      },
+      {
+        "id": "rec-20240919-democrats-donation-e9a79961"
+      },
+      {
+        "id": "rec-20240919-democrats-donation-45f3c3bf"
+      },
+      {
+        "id": "rec-20240919-democrats-donation-06edd30a"
+      },
+      {
+        "id": "rec-20240919-democrats-donation-1d8acd5d"
+      },
+      {
+        "id": "rec-20240919-democrats-donation-82297063"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-a3021ba1"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-56d07298"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-c1aac092"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-ad5771b8"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-35dd3365"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-1cef5ccd"
+      },
+      {
+        "id": "rec-20240918-democrats-donation-09710365"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-4c83fdf8"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-ac11d04f"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-3177a0ae"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-88f8b8b4"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-954e6505"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-462593b0"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-c70d0d90"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-8299fef5"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-83f828f2"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-afcd3caf"
+      },
+      {
+        "id": "rec-20240917-democrats-donation-f88629da"
+      },
+      {
+        "id": "rec-20240916-likud-donation-b7965482"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-14d258c6"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-cd463ab1"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-569191d5"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-1269709c"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-408532e0"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-e883fb7e"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-259e2d2b"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-c3c41284"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-aa38f8f9"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-512c0ac0"
+      },
+      {
+        "id": "rec-20240916-democrats-donation-d18eab72"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-1b7521de"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-b1082ac5"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-ef86fc8e"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-95dac980"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-aa815c68"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-05dd8dd9"
+      },
+      {
+        "id": "rec-20240915-democrats-donation-17f66193"
+      },
+      {
+        "id": "rec-20240914-democrats-donation-4e722445"
+      },
+      {
+        "id": "rec-20240914-democrats-donation-89c45728"
+      },
+      {
+        "id": "rec-20240914-democrats-donation-7e478b77"
+      },
+      {
+        "id": "rec-20240913-democrats-donation-8120c744"
+      },
+      {
+        "id": "rec-20240913-democrats-donation-e3dd2a73"
+      },
+      {
+        "id": "rec-20240913-democrats-donation-9a6de802"
+      },
+      {
+        "id": "rec-20240913-democrats-donation-79ddbbfe"
+      },
+      {
+        "id": "rec-20240913-democrats-donation-9592e1e1"
+      },
+      {
+        "id": "rec-20240912-democrats-donation-febad9c9"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-bf9380ef"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-26370f25"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-63d1f7d4"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-2272d876"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-10a6bd3d"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-7e645ba9"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-68961378"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-45a16ba4"
+      },
+      {
+        "id": "rec-20240909-democrats-donation-8f046ab6"
+      },
+      {
+        "id": "rec-20240827-yisrael-beiteinu-donation-f828f0f4"
+      },
+      {
+        "id": "rec-20240818-democrats-donation-a234f4f0"
+      },
+      {
+        "id": "rec-20240812-democrats-donation-d3528c00"
+      },
+      {
+        "id": "rec-20240812-democrats-donation-ba786a06"
+      },
+      {
+        "id": "rec-20240811-democrats-donation-641536fb"
+      },
+      {
+        "id": "rec-20240811-democrats-donation-448676e6"
+      },
+      {
+        "id": "rec-20240809-democrats-donation-e23d4ded"
+      },
+      {
+        "id": "rec-20240809-democrats-donation-477d8545"
+      },
+      {
+        "id": "rec-20240719-yisrael-beiteinu-donation-d16ff9ec"
+      },
+      {
+        "id": "rec-20240712-democrats-donation-9518aada"
+      },
+      {
+        "id": "rec-20240711-democrats-donation-ac553b72"
+      },
+      {
+        "id": "rec-20240711-democrats-donation-d9f43448"
+      },
+      {
+        "id": "rec-20240711-democrats-donation-ce519d92"
+      },
+      {
+        "id": "rec-20240711-democrats-donation-a272be93"
+      },
+      {
+        "id": "rec-20240629-yesh-atid-donation-4f393952"
+      },
+      {
+        "id": "rec-20240623-state-right-donation-32c0b4df"
+      },
+      {
+        "id": "rec-20240622-yesh-atid-donation-3c235e4c"
+      },
+      {
+        "id": "rec-20240617-blue-white-donation-0707e397"
+      },
+      {
+        "id": "rec-20240612-democrats-donation-6177f567"
+      },
+      {
+        "id": "rec-20240612-democrats-donation-5af7bfe3"
+      },
+      {
+        "id": "rec-20240612-democrats-donation-ca2fd18f"
+      },
+      {
+        "id": "rec-20240612-democrats-donation-139ddc84"
+      },
+      {
+        "id": "rec-20240612-democrats-donation-c2c61adc"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-3ae6ca2b"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-f7d14092"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-bca2266b"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-084d663e"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-8969b72f"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-1b85630e"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-b6633d9b"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-3002a815"
+      },
+      {
+        "id": "rec-20240611-democrats-donation-632a65a6"
+      },
+      {
+        "id": "rec-20240609-democrats-donation-401a2fba"
+      },
+      {
+        "id": "rec-20240609-democrats-donation-fde5a919"
+      },
+      {
+        "id": "rec-20240512-democrats-donation-7682d615"
+      },
+      {
+        "id": "rec-20240512-democrats-donation-be1253eb"
+      },
+      {
+        "id": "rec-20240512-democrats-donation-5790bf61"
+      },
+      {
+        "id": "rec-20240512-democrats-donation-e96347c3"
+      },
+      {
+        "id": "rec-20240510-democrats-donation-25a95b1a"
+      },
+      {
+        "id": "rec-20240509-democrats-donation-0b7c9200"
+      },
+      {
+        "id": "rec-20240509-democrats-donation-c2ca771d"
+      },
+      {
+        "id": "rec-20240509-democrats-donation-bfb0c51d"
+      },
+      {
+        "id": "rec-20240509-democrats-donation-76fa40c9"
+      },
+      {
+        "id": "rec-20240412-democrats-donation-97be9510"
+      },
+      {
+        "id": "rec-20240412-democrats-donation-b5c6e638"
+      },
+      {
+        "id": "rec-20240412-democrats-donation-32c54486"
+      },
+      {
+        "id": "rec-20240412-democrats-donation-b50445d1"
+      },
+      {
+        "id": "rec-20240409-democrats-donation-65c95321"
+      },
+      {
+        "id": "rec-20240409-democrats-donation-d27f45ed"
+      },
+      {
+        "id": "rec-20240408-yesh-atid-donation-2c43ff70"
+      },
+      {
+        "id": "rec-20240312-democrats-donation-dbb5999d"
+      },
+      {
+        "id": "rec-20240312-democrats-donation-762c4891"
+      },
+      {
+        "id": "rec-20240312-democrats-donation-063775a9"
+      },
+      {
+        "id": "rec-20240311-democrats-donation-fecf30ee"
+      },
+      {
+        "id": "rec-20240311-democrats-donation-9965adf3"
+      },
+      {
+        "id": "rec-20240311-democrats-donation-68ec00dd"
+      },
+      {
+        "id": "rec-20240310-democrats-donation-9384fc40"
+      },
+      {
+        "id": "rec-20240310-democrats-donation-38432fe7"
+      },
+      {
+        "id": "rec-20240310-democrats-donation-8c1a38fb"
+      },
+      {
+        "id": "rec-20240310-democrats-donation-959e2c2e"
+      },
+      {
+        "id": "rec-20240309-democrats-donation-ace24eda"
+      },
+      {
+        "id": "rec-20240309-democrats-donation-d96a3363"
+      },
+      {
+        "id": "rec-20240309-democrats-donation-578a038e"
+      },
+      {
+        "id": "rec-20240309-democrats-donation-1d09af42"
+      },
+      {
+        "id": "rec-20240309-democrats-donation-e13098c6"
+      },
+      {
+        "id": "rec-20240302-democrats-donation-41a44211"
+      },
+      {
+        "id": "rec-20240302-democrats-donation-1235b1af"
+      },
+      {
+        "id": "rec-20240225-blue-white-donation-0dfb842b"
+      },
+      {
+        "id": "rec-20240221-yesh-atid-donation-78e1c390"
+      },
+      {
+        "id": "rec-20240220-yesh-atid-donation-03ac1b64"
+      },
+      {
+        "id": "rec-20240220-yesh-atid-donation-9f5ae1b7"
+      },
+      {
+        "id": "rec-20240219-yesh-atid-donation-d5431978"
+      },
+      {
+        "id": "rec-20240218-democrats-donation-f16f07ef"
+      },
+      {
+        "id": "rec-20240216-yesh-atid-donation-9be26030"
+      },
+      {
+        "id": "rec-20240214-yesh-atid-donation-186c7a61"
+      },
+      {
+        "id": "rec-20240214-yisrael-beiteinu-donation-eb43ddfe"
+      },
+      {
+        "id": "rec-20240214-yesh-atid-donation-e1659ce5"
+      },
+      {
+        "id": "rec-20240213-yisrael-beiteinu-donation-645cf855"
+      },
+      {
+        "id": "rec-20240213-yesh-atid-donation-0ff9afa0"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-e77d776e"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-2bde8ecd"
+      },
+      {
+        "id": "rec-20240212-blue-white-donation-6e353c5b"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-694ca4d4"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-22e1c929"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-6cb3bfe2"
+      },
+      {
+        "id": "rec-20240212-democrats-donation-e36ab2d9"
+      },
+      {
+        "id": "rec-20240211-democrats-donation-fcc32ad2"
+      },
+      {
+        "id": "rec-20240211-yesh-atid-donation-66063cb1"
+      },
+      {
+        "id": "rec-20240210-democrats-donation-e088006c"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-d1ea7b29"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-3f29a934"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-ee720625"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-ac99a1d5"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-fbe7be17"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-18072695"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-d8d85226"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-4b02eb2d"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-5d4ccc39"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-081d9fba"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-8ba37971"
+      },
+      {
+        "id": "rec-20240209-democrats-donation-6d585a81"
+      },
+      {
+        "id": "rec-20240208-yesh-atid-donation-ed68f6d0"
+      },
+      {
+        "id": "rec-20240207-yesh-atid-donation-c2cf0856"
+      },
+      {
+        "id": "rec-20240207-yesh-atid-donation-c0d45112"
+      },
+      {
+        "id": "rec-20240207-yesh-atid-donation-f70f8216"
+      },
+      {
+        "id": "rec-20240207-yesh-atid-donation-0027db10"
+      },
+      {
+        "id": "rec-20240205-yesh-atid-donation-af5923b3"
+      },
+      {
+        "id": "rec-20240205-yesh-atid-donation-3b14bd29"
+      },
+      {
+        "id": "rec-20240201-yesh-atid-donation-f67add1a"
+      },
+      {
+        "id": "rec-20240131-yesh-atid-donation-31acdbf1"
+      },
+      {
+        "id": "rec-20240131-yesh-atid-donation-71cfec08"
+      },
+      {
+        "id": "rec-20240130-democrats-donation-4399b492"
+      },
+      {
+        "id": "rec-20240130-democrats-donation-c111c723"
+      },
+      {
+        "id": "rec-20240130-democrats-donation-2a3a805e"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-ca01ea89"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-6c39f1fd"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-f0eb5c37"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-d81c8ebf"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-a9be424d"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-128ce922"
+      },
+      {
+        "id": "rec-20240112-democrats-donation-87b6e686"
+      },
+      {
+        "id": "rec-20240110-democrats-donation-6dd7da0a"
+      },
+      {
+        "id": "rec-20240110-democrats-donation-35a00f57"
+      },
+      {
+        "id": "rec-20240110-democrats-donation-7be0f7ce"
+      },
+      {
+        "id": "rec-20240104-yisrael-beiteinu-donation-8607e423"
+      },
+      {
+        "id": "rec-20231219-yesh-atid-donation-d9215556"
+      },
+      {
+        "id": "rec-20231219-yesh-atid-donation-6cac2753"
+      },
+      {
+        "id": "rec-20231219-yesh-atid-donation-1cc8b409"
+      },
+      {
+        "id": "rec-20231219-yesh-atid-donation-ad998d27"
+      },
+      {
+        "id": "rec-20231212-yesh-atid-donation-e06c4c9a"
+      },
+      {
+        "id": "rec-20231125-blue-white-donation-241f13b3"
+      },
+      {
+        "id": "rec-20231029-blue-white-donation-7a2e39ea"
+      },
+      {
+        "id": "rec-20231027-blue-white-donation-1d3855f0"
+      },
+      {
+        "id": "rec-20231025-blue-white-donation-fa155624"
+      },
+      {
+        "id": "rec-20231010-state-right-donation-b998d1c2"
+      },
+      {
+        "id": "rec-20231009-yesh-atid-donation-af42a94c"
+      },
+      {
+        "id": "rec-20231005-state-right-donation-5ff2c927"
+      },
+      {
+        "id": "rec-20231005-yesh-atid-donation-056ad31c"
+      },
+      {
+        "id": "rec-20231005-yesh-atid-donation-750fbbb9"
+      },
+      {
+        "id": "rec-20231004-blue-white-donation-361b214d"
+      },
+      {
+        "id": "rec-20231004-blue-white-donation-999c27e0"
+      },
+      {
+        "id": "rec-20231004-blue-white-donation-d74a9747"
+      },
+      {
+        "id": "rec-20231004-blue-white-donation-904b1f00"
+      },
+      {
+        "id": "rec-20231004-state-right-donation-b35543e2"
+      },
+      {
+        "id": "rec-20231003-yesh-atid-donation-7bb0d645"
+      },
+      {
+        "id": "rec-20231001-blue-white-donation-9f11fe47"
+      },
+      {
+        "id": "rec-20231001-yesh-atid-donation-f5bf2417"
+      },
+      {
+        "id": "rec-20231001-yesh-atid-donation-35e49bae"
+      },
+      {
+        "id": "rec-20230930-yesh-atid-donation-faf1e7c3"
+      },
+      {
+        "id": "rec-20230929-blue-white-donation-b3cf62ba"
+      },
+      {
+        "id": "rec-20230929-blue-white-donation-225ba25a"
+      },
+      {
+        "id": "rec-20230928-yesh-atid-donation-3d1cc1f8"
+      },
+      {
+        "id": "rec-20230928-religious-zionism-donation-e68e0f22"
+      },
+      {
+        "id": "rec-20230928-yesh-atid-donation-655e4d92"
+      },
+      {
+        "id": "rec-20230927-blue-white-donation-fd933d37"
+      },
+      {
+        "id": "rec-20230927-blue-white-donation-2a17872e"
+      },
+      {
+        "id": "rec-20230927-religious-zionism-donation-daf08744"
+      },
+      {
+        "id": "rec-20230927-religious-zionism-donation-8515a817"
+      },
+      {
+        "id": "rec-20230927-likud-donation-0fedf222"
+      },
+      {
+        "id": "rec-20230927-yesh-atid-donation-67705530"
+      },
+      {
+        "id": "rec-20230926-yesh-atid-donation-2a4739ec"
+      },
+      {
+        "id": "rec-20230926-yesh-atid-donation-50210902"
+      },
+      {
+        "id": "rec-20230926-yesh-atid-donation-927275d7"
+      },
+      {
+        "id": "rec-20230923-blue-white-donation-d0174902"
+      },
+      {
+        "id": "rec-20230921-yesh-atid-donation-c7a98743"
+      },
+      {
+        "id": "rec-20230921-blue-white-donation-2bb0b33c"
+      },
+      {
+        "id": "rec-20230921-yesh-atid-donation-16bc0827"
+      },
+      {
+        "id": "rec-20230920-yesh-atid-donation-fb210e6e"
+      },
+      {
+        "id": "rec-20230920-yesh-atid-donation-ac31cdaf"
+      },
+      {
+        "id": "rec-20230920-yesh-atid-donation-01375dd9"
+      },
+      {
+        "id": "rec-20230914-yesh-atid-donation-74ed02cf"
+      },
+      {
+        "id": "rec-20230914-state-right-donation-9a8d1d6d"
+      },
+      {
+        "id": "rec-20230914-yesh-atid-donation-04f4b1d3"
+      },
+      {
+        "id": "rec-20230913-yesh-atid-donation-2f5db0b7"
+      },
+      {
+        "id": "rec-20230912-yesh-atid-donation-1458927f"
+      },
+      {
+        "id": "rec-20230912-yesh-atid-donation-f1a8d7d4"
+      },
+      {
+        "id": "rec-20230912-yesh-atid-donation-e65ccc94"
+      },
+      {
+        "id": "rec-20230910-yesh-atid-donation-ee40cbd9"
+      },
+      {
+        "id": "rec-20230910-state-right-donation-9c6d5ac3"
+      },
+      {
+        "id": "rec-20230910-state-right-donation-9ad07afd"
+      },
+      {
+        "id": "rec-20230910-religious-zionism-donation-6b72fac8"
+      },
+      {
+        "id": "rec-20230910-yesh-atid-donation-59f52e8c"
+      },
+      {
+        "id": "rec-20230910-yesh-atid-donation-69324097"
+      },
+      {
+        "id": "rec-20230910-yesh-atid-donation-07d95288"
+      },
+      {
+        "id": "rec-20230910-yesh-atid-donation-2a83f368"
+      },
+      {
+        "id": "rec-20230908-yesh-atid-donation-e688130b"
+      },
+      {
+        "id": "rec-20230907-yesh-atid-donation-96c334b4"
+      },
+      {
+        "id": "rec-20230907-yesh-atid-donation-872d0708"
+      },
+      {
+        "id": "rec-20230905-yesh-atid-donation-c0fa28fd"
+      },
+      {
+        "id": "rec-20230904-yesh-atid-donation-71eb0bc6"
+      },
+      {
+        "id": "rec-20230903-blue-white-donation-db73dbef"
+      },
+      {
+        "id": "rec-20230831-yesh-atid-donation-76051764"
+      },
+      {
+        "id": "rec-20230830-yesh-atid-donation-9d18a523"
+      },
+      {
+        "id": "rec-20230830-yesh-atid-donation-ebe54fe4"
+      },
+      {
+        "id": "rec-20230829-blue-white-donation-a3a78868"
+      },
+      {
+        "id": "rec-20230829-yesh-atid-donation-6cf0eced"
+      },
+      {
+        "id": "rec-20230828-yesh-atid-donation-3427e19b"
+      },
+      {
+        "id": "rec-20230828-yesh-atid-donation-400b8e1d"
+      },
+      {
+        "id": "rec-20230821-blue-white-donation-d92fbcd1"
+      },
+      {
+        "id": "rec-20230818-state-right-donation-a4bd4705"
+      },
+      {
+        "id": "rec-20230814-yesh-atid-donation-76583c6a"
+      },
+      {
+        "id": "rec-20230814-yesh-atid-donation-b88acfe3"
+      },
+      {
+        "id": "rec-20230810-state-right-donation-1d3c9775"
+      },
+      {
+        "id": "rec-20230809-yesh-atid-donation-258162b1"
+      },
+      {
+        "id": "rec-20230808-yesh-atid-donation-059cf0c0"
+      },
+      {
+        "id": "rec-20230807-yesh-atid-donation-0be9e883"
+      },
+      {
+        "id": "rec-20230807-yesh-atid-donation-efbca3cf"
+      },
+      {
+        "id": "rec-20230807-yesh-atid-donation-acd6d94f"
+      },
+      {
+        "id": "rec-20230806-religious-zionism-donation-cd0e03e1"
+      },
+      {
+        "id": "rec-20230806-yesh-atid-donation-1f6a9ccb"
+      },
+      {
+        "id": "rec-20230805-yesh-atid-donation-72a01fe0"
+      },
+      {
+        "id": "rec-20230802-religious-zionism-donation-28edd93c"
+      },
+      {
+        "id": "rec-20230801-religious-zionism-donation-a6f0f4cc"
+      },
+      {
+        "id": "rec-20230730-yesh-atid-donation-6db7c595"
+      },
+      {
+        "id": "rec-20230725-yesh-atid-donation-7b37eb2b"
+      },
+      {
+        "id": "rec-20230723-state-right-donation-8c6e38fe"
+      },
+      {
+        "id": "rec-20230722-yesh-atid-donation-b8401e83"
+      },
+      {
+        "id": "rec-20230721-yesh-atid-donation-3826a872"
+      },
+      {
+        "id": "rec-20230719-yesh-atid-donation-419d2052"
+      },
+      {
+        "id": "rec-20230718-yesh-atid-donation-920c9d1f"
+      },
+      {
+        "id": "rec-20230717-yesh-atid-donation-3bd1e70c"
+      },
+      {
+        "id": "rec-20230716-state-right-donation-2e2b41e4"
+      },
+      {
+        "id": "rec-20230705-state-right-donation-7796793c"
+      },
+      {
+        "id": "rec-20230702-state-right-donation-cbca7ebf"
+      },
+      {
+        "id": "rec-20230701-yesh-atid-donation-c488eed8"
+      },
+      {
+        "id": "rec-20230701-yesh-atid-donation-c4d88c70"
+      },
+      {
+        "id": "rec-20230629-state-right-donation-c33c1bb1"
+      },
+      {
+        "id": "rec-20230627-yesh-atid-donation-cb1ab59a"
+      },
+      {
+        "id": "rec-20230622-state-right-donation-ddab7094"
+      },
+      {
+        "id": "rec-20230620-yesh-atid-donation-d2bf760e"
+      },
+      {
+        "id": "rec-20230620-yesh-atid-donation-d9865ce4"
+      },
+      {
+        "id": "rec-20230615-state-right-donation-5480fc9b"
+      },
+      {
+        "id": "rec-20230615-state-right-donation-3c47d38e"
+      },
+      {
+        "id": "rec-20230614-state-right-donation-46a07370"
+      },
+      {
+        "id": "rec-20230611-state-right-donation-171898d3"
+      },
+      {
+        "id": "rec-20230524-yesh-atid-donation-466f719a"
+      },
+      {
+        "id": "rec-20230523-yesh-atid-donation-85e032ba"
+      },
+      {
+        "id": "rec-20230522-yesh-atid-donation-c9ee09c6"
+      },
+      {
+        "id": "rec-20230521-yesh-atid-donation-f4ba4abd"
+      },
+      {
+        "id": "rec-20230517-yesh-atid-donation-d8beb15e"
+      },
+      {
+        "id": "rec-20230503-blue-white-donation-7f71616b"
+      },
+      {
+        "id": "rec-20230321-yesh-atid-donation-28e30da9"
+      },
+      {
+        "id": "rec-20230215-yisrael-beiteinu-donation-62416496"
+      },
+      {
+        "id": "rec-20230215-yisrael-beiteinu-donation-592db202"
+      },
+      {
+        "id": "rec-20230215-yisrael-beiteinu-donation-9e0c5249"
+      },
+      {
+        "id": "rec-20230109-yisrael-beiteinu-donation-c938c518"
+      },
+      {
+        "id": "rec-20230109-yisrael-beiteinu-donation-f6e31385"
+      },
+      {
+        "id": "rec-20230105-yisrael-beiteinu-donation-763cda70"
+      },
+      {
+        "id": "rec-20221231-yisrael-beiteinu-donation-f00d662c"
+      },
+      {
+        "id": "rec-20221231-hadash-taal-donation-f73ec47a"
+      },
+      {
+        "id": "rec-20221231-hadash-taal-donation-3cf4c2ae"
+      },
+      {
+        "id": "rec-20221228-yisrael-beiteinu-donation-2c76d050"
+      },
+      {
+        "id": "rec-20221228-yisrael-beiteinu-donation-888495cb"
+      },
+      {
+        "id": "rec-20221228-yisrael-beiteinu-donation-aa68979f"
+      },
+      {
+        "id": "rec-20221228-yisrael-beiteinu-donation-70528a6d"
+      },
+      {
+        "id": "rec-20221206-state-right-donation-6095da31"
+      },
+      {
+        "id": "rec-20221122-shas-donation-9e5c3717"
+      },
+      {
+        "id": "rec-20221118-yesh-atid-donation-95f91800"
+      },
+      {
+        "id": "rec-20221115-state-right-donation-e82a4321"
+      },
+      {
+        "id": "rec-20221114-hadash-taal-donation-1d1aee74"
+      },
+      {
+        "id": "rec-20221114-hadash-taal-donation-3944b27a"
+      },
+      {
+        "id": "rec-20221108-hadash-taal-donation-1145eaf2"
+      },
+      {
+        "id": "rec-20221105-hadash-taal-donation-006a4650"
+      },
+      {
+        "id": "rec-20221105-hadash-taal-donation-9514485c"
+      },
+      {
+        "id": "rec-20221105-hadash-taal-donation-79c92bd5"
+      },
+      {
+        "id": "rec-20221105-hadash-taal-donation-9e2240e2"
+      }
+    ],
     "removed": [],
     "modified": [
       {
-        "id": "src-party-inclusion-policy",
+        "id": "rec-20260726-yashar-001",
         "fields": {
-          "access_datetime": {
-            "before": "2026-07-27T16:00:00+03:00",
-            "after": "2026-07-27T19:15:12+03:00"
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
           },
-          "extraction_datetime": {
-            "before": "2026-07-27T16:00:00+03:00",
-            "after": "2026-07-27T19:15:12+03:00"
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260726-miluimnikim-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
           },
-          "verification_status": {
-            "before": "pending_semantic",
-            "after": "verified"
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260724-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
           },
-          "notes": {
-            "before": "הקישור יהפוך זמין לאחר יצירת המאגר הציבורי",
-            "after": "הקישור אומת לאחר יצירת המאגר הציבורי"
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260724-miluimnikim-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260723-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260722-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260722-yashar-002",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260721-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260721-yashar-002",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260721-yashar-003",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260720-miluimnikim-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260720-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260719-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260718-yashar-001",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
+          }
+        }
+      },
+      {
+        "id": "rec-20260718-yashar-002",
+        "fields": {
+          "in_statutory_election_period": {
+            "before": "",
+            "after": "true"
+          },
+          "source_id": {
+            "before": "src-comptroller-party-statements-current-cycle",
+            "after": "src-comptroller-party-statements-interelection"
           }
         }
       }
     ]
+  },
+  "sources": {
+    "added": [
+      {
+        "id": "src-comptroller-party-statements-interelection"
+      },
+      {
+        "id": "src-knesset-labor-democrats-rename"
+      },
+      {
+        "id": "src-cec-hadash-maki"
+      },
+      {
+        "id": "src-comptroller-religious-zionism-tkuma"
+      }
+    ],
+    "removed": [
+      {
+        "id": "src-comptroller-party-statements-current-cycle"
+      }
+    ],
+    "modified": []
   },
   "changedAmounts": [],
   "changedSourceUrls": [],
@@ -61,6 +3202,46 @@
     {
       "sourceId": "src-eretzmuseum-amon-yariv",
       "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    }
+  ],
+  "excludedEntities": [
+    {
+      "sourcePartyName": "זהות – תנועה ישראלית יהודית",
+      "recordCount": 95,
+      "amountAgorot": 17091300,
+      "types": {
+        "תרומה": 95
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי"
+    },
+    {
+      "sourcePartyName": "ביחד נצליח",
+      "recordCount": 3,
+      "amountAgorot": 10419000,
+      "types": {
+        "ערבות": 1,
+        "תרומה": 2
+      },
+      "reasonHe": "ישות נפרדת מבנט 2026 ואינה עומדת בכלל ההכללה"
+    },
+    {
+      "sourcePartyName": "צבר מפלגת הצעירים של ישראל",
+      "recordCount": 2,
+      "amountAgorot": 92500000,
+      "types": {
+        "הלוואה": 1,
+        "ערבות": 1
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי; לכן הוחרגו גם הערבות וגם הלוואת דיסקונט"
+    },
+    {
+      "sourcePartyName": "לזוז",
+      "recordCount": 96,
+      "amountAgorot": 18445100,
+      "types": {
+        "תרומה": 96
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי"
     }
   ]
 }
