@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { Dataset } from "../../scripts/lib/load-data";
+import { csvContracts, type Dataset } from "../../scripts/lib/load-data";
 import { createMasterCsv, masterHeaders } from "../../scripts/lib/public-data";
 
 const emptyDataset: Dataset = {
@@ -23,6 +23,12 @@ const emptyDataset: Dataset = {
 };
 
 describe("public CSV", () => {
+  it("includes profile checks and party aliases in the normalized package contract", () => {
+    expect(Object.keys(csvContracts)).toEqual(
+      expect.arrayContaining(["profile_checks.csv", "party_name_aliases.csv"]),
+    );
+  });
+
   it("starts with an Excel-compatible UTF-8 BOM and preserves the column contract", () => {
     const csv = createMasterCsv(emptyDataset);
     expect(csv.charCodeAt(0)).toBe(0xfeff);

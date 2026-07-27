@@ -18,7 +18,10 @@ export function PersonMiniBreakdown({
   if (breakdown.length === 0) return null;
 
   return (
-    <section className="visualization-section person-mini-chart" aria-labelledby="person-breakdown-title">
+    <section
+      className="visualization-section person-mini-chart"
+      aria-labelledby="person-breakdown-title"
+    >
       <div className="section-heading">
         <p className="section-kicker">לפי מפלגה ושנה</p>
         <h2 id="person-breakdown-title">פירוט הסכומים המדווחים</h2>

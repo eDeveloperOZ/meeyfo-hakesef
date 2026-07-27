@@ -8,6 +8,7 @@ import { ExternalPartyLink } from "../../../components/external-party-link";
 import { MetricHeadline } from "../../../components/metric-headline";
 import { MonthlyFlowChart } from "../../../components/monthly-flow-chart";
 import { PartyMark } from "../../../components/party-mark";
+import { PartyStatBand } from "../../../components/party-stat-band";
 import { RecordsList } from "../../../components/records-list";
 import { SourceLink } from "../../../components/source-link";
 import { TopCounterpartiesChart } from "../../../components/top-counterparties-chart";
@@ -93,6 +94,7 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
         )}
       </header>
 
+      <PartyStatBand records={records} persons={data.persons} organizations={data.organizations} />
       <MetricHeadline summary={summary} scope={scope} />
       <CategoryDistributionBar records={records} />
       <TopCounterpartiesChart

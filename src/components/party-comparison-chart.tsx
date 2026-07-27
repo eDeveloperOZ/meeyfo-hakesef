@@ -14,21 +14,19 @@ export function PartyComparisonChart({
   records: FinancingRecord[];
 }) {
   const comparison = buildPartyComparison(parties, records);
-  const max = Math.max(
-    ...comparison.flatMap((datum) => [datum.receivedCash, datum.guarantees]),
-    1,
-  );
+  const max = Math.max(...comparison.flatMap((datum) => [datum.receivedCash, datum.guarantees]), 1);
 
   return (
-    <section className="visualization-section home-comparison" aria-labelledby="party-comparison-title">
+    <section
+      className="visualization-section home-comparison"
+      aria-labelledby="party-comparison-title"
+    >
       <div className="section-heading section-heading-split">
         <div>
           <p className="section-kicker">כל המפלגות · לפי כסף שהתקבל</p>
           <h2 id="party-comparison-title">השוואת מקורות המימון שדווחו</h2>
         </div>
-        <p>
-          האורך מייצג סכום על סולם אחיד. ערבויות מוצגות בדוגמה נפרדת ואינן כסף שהתקבל.
-        </p>
+        <p>האורך מייצג סכום על סולם אחיד. ערבויות מוצגות בדוגמה נפרדת ואינן כסף שהתקבל.</p>
       </div>
       <div className="horizontal-chart-frame party-comparison-frame">
         <ChartLegend />
@@ -43,9 +41,7 @@ export function PartyComparisonChart({
                 patternId={`comparison-guarantee-${datum.partyId}`}
                 label={datum.partyName}
               />
-              <strong>
-                {datum.hasRecords ? formatAgorot(datum.receivedCash) : "לא דווח"}
-              </strong>
+              <strong>{datum.hasRecords ? formatAgorot(datum.receivedCash) : "לא דווח"}</strong>
             </li>
           ))}
         </ol>

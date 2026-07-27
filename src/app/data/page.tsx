@@ -71,6 +71,11 @@ export default function DataPage() {
           <strong>בדיקות כיסוי לפרופילים</strong>
           <span>תאריך, מקורות שנבדקו ותוצאת ההתאמה לכל אדם בשכבות הכיסוי</span>
         </a>
+        <a className="download-card" href="/data/party_name_aliases.csv" download>
+          <Download aria-hidden="true" />
+          <strong>כינויי מפלגות</strong>
+          <span>מיפוי שמות, סיעות ומותגי בחירות אל הישות הקנונית</span>
+        </a>
       </section>
 
       <section className="rendered-markdown" aria-labelledby="dictionary-title">

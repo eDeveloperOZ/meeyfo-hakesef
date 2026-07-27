@@ -1,8 +1,4 @@
-export function ChartLegend({
-  cashLabel = "כסף שהתקבל",
-}: {
-  cashLabel?: string;
-}) {
+export function ChartLegend({ cashLabel = "כסף שהתקבל" }: { cashLabel?: string }) {
   return (
     <ul className="chart-legend" aria-label="מקרא התרשים">
       <li>

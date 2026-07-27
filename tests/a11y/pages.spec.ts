@@ -20,11 +20,13 @@ const staticRoutes = [
 ];
 
 for (const route of staticRoutes) {
-  test(`${route} has no critical axe violations`, async ({ page }) => {
+  test(`${route} has no serious or critical axe violations`, async ({ page }) => {
     test.setTimeout(60_000);
     await page.goto(route);
     const results = await new AxeBuilder({ page }).analyze();
-    expect(results.violations.filter(({ impact }) => impact === "critical")).toEqual([]);
+    expect(
+      results.violations.filter(({ impact }) => impact === "serious" || impact === "critical"),
+    ).toEqual([]);
   });
 }
 
