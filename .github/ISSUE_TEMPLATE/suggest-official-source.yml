@@ -1,0 +1,28 @@
+name: הצעת מקור רשמי
+description: הציעו מסמך או מאגר רשמי שיכול לתמוך בנתון.
+title: "[מקור רשמי] "
+labels: ["source"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        מקורות תקשורתיים, רשתות חברתיות ומאגרי מידע מסחריים אינם מתקבלים כמקור לרשומה כספית. אין לפרסם מידע אישי או רגיש.
+  - type: input
+    id: source
+    attributes:
+      label: קישור ישיר למקור הרשמי
+      placeholder: https://…
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: לאיזה נתון המקור מתייחס?
+      description: ציינו עמוד, טבלה, סעיף או מזהה רשומה מדויק ככל האפשר.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: הקשר נוסף
+      description: ללא מידע אישי מעבר למה שכבר פורסם בפרסום הסטטוטורי ונחוץ לזיהוי הרשומה.

@@ -1,0 +1,19 @@
+party_id,name_he,legal_name_he,entity_type,status,eligibility_basis_he,eligibility_source_id,website_url,logo_file,brand_color,axis_position_id,notes
+likud,הליכוד,הליכוד - תנועה לאומית ליברלית,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://www.likud.org.il/,,#1F5AA6,axis-likud,
+yesh-atid,יש עתיד,יש עתיד - בראשות יאיר לפיד,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://yeshatid.org.il/,,#163F8C,axis-yesh-atid,המותג ביחד נמדד בנפרד בסקרים משום שהוא רשימת בחירות מתוכננת
+shas,ש״ס,התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ״ל,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,,,#162F75,axis-shas,
+blue-white,כחול לבן,כחול לבן - המחנה הממלכתי,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://kachollavan.org.il/,,#58A9D8,axis-blue-white,
+utj,יהדות התורה,יהדות התורה והשבת אגודת ישראל - דגל התורה,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,,,#243A77,axis-utj,
+religious-zionism,הציונות הדתית,הציונות הדתית בראשות בצלאל סמוטריץ׳,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://zionutdatit.org.il/,,#2F5B9A,axis-religious-zionism,
+otzma-yehudit,עוצמה יהודית,עוצמה יהודית בראשות איתמר בן גביר,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://ozma-yeudit.co.il/,,#18324B,axis-otzma-yehudit,
+yisrael-beiteinu,ישראל ביתנו,ישראל ביתנו,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://beytenu.org.il/,,#3A78B6,axis-yisrael-beiteinu,
+raam,רע״ם,הרשימה הערבית המאוחדת,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,,,#2E8B57,axis-raam,
+hadash-taal,חד״ש–תע״ל,חד״ש–תע״ל,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://hadash.org.il/,,#C73B38,axis-hadash-taal,
+labor,העבודה,מפלגת העבודה הישראלית,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,,,#C83B67,axis-labor,מפלגת הדמוקרטים נמדדת בנפרד בסקרים בעוד הסיעה בכנסת עדיין מופיעה בשם העבודה
+state-right,הימין הממלכתי,הימין הממלכתי,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,,,#466987,axis-state-right,
+noam,נעם,נעם - בראשות אבי מעוז,faction,knesset,סיעה מכהנת בכנסת ה-25,src-knesset-factions25,https://noamparty.org.il/,,#38485C,axis-noam,
+yashar,ישר!,ישר לישראל עם איזנקוט,list,polled,נמדדה בשני סקרי כוונות הצבעה ארציים לפחות בתקופה 6.7.2026–13.7.2026,src-poll-n12-2026-07-13,,,#4B7B7A,axis-yashar,השם המשפטי נלקח ממערכת הדיווח של מבקר המדינה; שם הרשימה טעון עדכון לאחר הגשת הרשימות לוועדת הבחירות
+beyachad,ביחד,ביחד בראשות נפתלי בנט,list,polled,נמדדה בשני סקרי כוונות הצבעה ארציים לפחות בתקופה 6.7.2026–13.7.2026,src-poll-n12-2026-07-13,,,#5A7D9A,axis-beyachad,רשימת בחירות מתוכננת הכוללת את יש עתיד לפי פרסומי הסקרים
+democrats,הדמוקרטים,הדמוקרטים,party,polled,נמדדה בשני סקרי כוונות הצבעה ארציים לפחות בתקופה 6.7.2026–13.7.2026,src-poll-n12-2026-07-13,https://democrats.org.il/,,#D84774,axis-democrats,הקשר המשפטי לסיעת העבודה יוצג בנפרד עד פרסום הרשימות הרשמיות
+miluimnikim,בית ציוני–המילואימניקים,המילואימניקים,list,polled,נמדדה בסקרי כוונות הצבעה ארציים מ־13.7.2026 ומ־20.7.2026,src-poll-n12-2026-07-20,https://www.themiluimnikim.org.il/,,#65758A,axis-miluimnikim,שם הרשימה המשותפת מופיע בסקר מ־20.7.2026; הישות המקבלת במערכת מבקר המדינה היא המילואימניקים
+economic-party,המפלגה הכלכלית,המפלגה הכלכלית החדשה,party,owner_exception,נכללת בהחלטת בעל הפרויקט כחריג גלוי לכלל הזכאות,src-party-inclusion-policy,,,#467B63,axis-economic-party,חריג בעלים מפורש המתועד במדיניות ההכללה

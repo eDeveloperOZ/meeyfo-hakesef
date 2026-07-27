@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: שאלות ועדכונים ב־X
+    url: https://x.com/0fir0z
+    about: ערוץ ציבורי לשאלות כלליות על הפרויקט. אין לפרסם מידע אישי או רגיש.
+  - name: דיווח אבטחה פרטי
+    url: https://github.com/eDeveloperOZ/meeyfo-hakesef/security/advisories/new
+    about: לדיווח חסוי על חולשת אבטחה, בהתאם ל־SECURITY.md.

@@ -1,0 +1,4 @@
+assertion_id,person_id,org_id,assertion_type,role_text_he,start_date,end_date,source_id,verified_at,status
+assertion-angel-yaron-holding,person-angel-yaron,,material_holding,דווח כבעל מניות המחזיק בכ־22.61% מהון המניות המונפק והנפרע של שלמה א. אנג'ל בע״מ נכון לדיווח מיום 10 ביוני 2024,,,src-maya-angel-yaron-2024,2026-07-27,verified
+assertion-marom-adi-holding,person-marom-adi,,material_holding,דווח כבעלים המלא של Global Village Advisory Ltd. וכחלק מדבוקת השליטה באידומו בע״מ לפי דיווח מיום 14 בדצמבר 2021,,,src-maya-adi-marom-2021,2026-07-27,verified
+assertion-amon-yariv-position,person-amon-yariv,,position,מנהל את גלריה גורדון לאמנות בתל אביב מאז 2004 לפי ביוגרפיה מוסדית של הבית לצילום במוז״א,2004-01-01,,src-eretzmuseum-amon-yariv,2026-07-27,verified

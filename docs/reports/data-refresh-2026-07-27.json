@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-07-27T15:33:10.160Z",
+  "datasetVersion": "0.3.0",
+  "records": {
+    "added": [
+      {
+        "id": "rec-20260726-yashar-001"
+      },
+      {
+        "id": "rec-20260726-miluimnikim-001"
+      },
+      {
+        "id": "rec-20260724-yashar-001"
+      },
+      {
+        "id": "rec-20260724-miluimnikim-001"
+      },
+      {
+        "id": "rec-20260723-yashar-001"
+      },
+      {
+        "id": "rec-20260722-yashar-001"
+      },
+      {
+        "id": "rec-20260722-yashar-002"
+      },
+      {
+        "id": "rec-20260721-yashar-001"
+      },
+      {
+        "id": "rec-20260721-yashar-002"
+      },
+      {
+        "id": "rec-20260721-yashar-003"
+      },
+      {
+        "id": "rec-20260720-miluimnikim-001"
+      },
+      {
+        "id": "rec-20260720-yashar-001"
+      },
+      {
+        "id": "rec-20260719-yashar-001"
+      },
+      {
+        "id": "rec-20260718-yashar-001"
+      },
+      {
+        "id": "rec-20260718-yashar-002"
+      }
+    ],
+    "removed": [],
+    "modified": []
+  },
+  "sources": {
+    "added": [
+      {
+        "id": "src-cec-election-date"
+      },
+      {
+        "id": "src-party-financing-law"
+      },
+      {
+        "id": "src-knesset-financing-46"
+      },
+      {
+        "id": "src-comptroller-financing-portal"
+      },
+      {
+        "id": "src-knesset-factions25"
+      },
+      {
+        "id": "src-poll-n12-2026-07-06"
+      },
+      {
+        "id": "src-poll-n12-2026-07-13"
+      },
+      {
+        "id": "src-poll-n12-2026-07-20"
+      },
+      {
+        "id": "src-comptroller-party-statements-current-cycle"
+      },
+      {
+        "id": "src-idi-parties"
+      },
+      {
+        "id": "src-party-inclusion-policy"
+      },
+      {
+        "id": "src-maya-angel-yaron-2024"
+      },
+      {
+        "id": "src-maya-adi-marom-2021"
+      },
+      {
+        "id": "src-eretzmuseum-amon-yariv"
+      }
+    ],
+    "removed": [],
+    "modified": []
+  },
+  "changedAmounts": [],
+  "changedSourceUrls": [],
+  "brokenLinks": [],
+  "ambiguousRecords": [],
+  "rejectedUnofficial": [
+    {
+      "sourceId": "src-poll-n12-2026-07-06",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    },
+    {
+      "sourceId": "src-poll-n12-2026-07-13",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    },
+    {
+      "sourceId": "src-poll-n12-2026-07-20",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    },
+    {
+      "sourceId": "src-idi-parties",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    },
+    {
+      "sourceId": "src-party-inclusion-policy",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    },
+    {
+      "sourceId": "src-eretzmuseum-amon-yariv",
+      "reasonHe": "מקור עזר שאינו מורשה לרשומת מימון"
+    }
+  ]
+}

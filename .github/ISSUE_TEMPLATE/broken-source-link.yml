@@ -1,0 +1,35 @@
+name: דיווח על קישור מקור שבור
+description: דווחו על מקור שאינו נפתח או מוביל למסמך אחר.
+title: "[קישור מקור] "
+labels: ["source-link-check"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        אין לפרסם כאן מידע אישי או רגיש. קישור שבור אינו הוכחה שהרשומה שגויה, ולכן רשומות אינן נמחקות אוטומטית.
+  - type: input
+    id: page
+    attributes:
+      label: עמוד באתר
+      placeholder: https://…
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: קישור המקור שאינו עובד
+      placeholder: https://…
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: מה קרה כשפתחתם את הקישור?
+      placeholder: הודעת שגיאה, הפניה למסמך אחר או תיאור קצר
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: קישור רשמי חלופי, אם ידוע
+      placeholder: https://…

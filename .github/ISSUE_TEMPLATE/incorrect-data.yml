@@ -1,0 +1,37 @@
+name: דיווח על נתון שגוי
+description: הציעו תיקון לנתון שפורסם באתר, בצירוף מקור רשמי.
+title: "[תיקון נתון] "
+labels: ["data", "correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        תודה על העזרה. אין לכלול כתובת, מספר זהות, טלפון, דוא"ל או מידע אישי רגיש.
+  - type: input
+    id: page
+    attributes:
+      label: כתובת העמוד או מזהה הרשומה
+      placeholder: https://… או מזהה רשומה
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: מה נראה שגוי ומהו התיקון המוצע?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: קישור למקור רשמי
+      description: נדרש מקור של גוף ציבורי מאושר המתייחס במדויק לנתון.
+      placeholder: https://…
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: פרטיות
+      options:
+        - label: וידאתי שהפנייה אינה כוללת מידע פרטי או רגיש שאינו מופיע בפרסום הרשמי ונחוץ לתיקון.
+          required: true

@@ -1,0 +1,25 @@
+name: דיווח אבטחה
+description: הנחיה לדיווח חסוי; אין לפרסם פרטי חולשה ב־Issue ציבורי.
+title: "[אבטחה — לא לפרסם פרטי חולשה] "
+labels: ["security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **אל תפרסמו כאן פרטי חולשה, מידע אישי, סוד או דרך ניצול.**
+
+        יש לפתוח דיווח חסוי דרך
+        [GitHub Security Advisories](https://github.com/eDeveloperOZ/meeyfo-hakesef/security/advisories/new)
+        ולפעול לפי [SECURITY.md](../../SECURITY.md). אם אין אפשרות לפתוח דיווח חסוי, אפשר לפתוח Issue זה בלי פרטים טכניים ורק לבקש ערוץ תיאום.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: אישור
+      options:
+        - label: לא כללתי פרטי חולשה, מידע אישי או סוד ב־Issue הציבורי.
+          required: true
+  - type: textarea
+    id: coordination
+    attributes:
+      label: בקשת תיאום כללית בלבד
+      placeholder: אפשר לכתוב שיש ברשותכם דיווח אבטחה חסוי, ללא פרטים.

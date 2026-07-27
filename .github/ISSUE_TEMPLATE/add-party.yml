@@ -1,0 +1,40 @@
+name: בקשה להוספת מפלגה
+description: הציעו מפלגה שעומדת בכלל ההכללה המתועד.
+title: "[הוספת מפלגה] "
+labels: ["party-inclusion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        אין לפרסם מידע אישי או רגיש. נבדוק ייצוג בכנסת או הופעה בשני סקרי כוונת הצבעה ארציים ב־30 הימים האחרונים.
+  - type: input
+    id: name
+    attributes:
+      label: שם המפלגה או הרשימה
+    validations:
+      required: true
+  - type: dropdown
+    id: basis
+    attributes:
+      label: בסיס ההכללה המוצע
+      options:
+        - ייצוג בכנסת הנוכחית
+        - הופעה בשני סקרים ארציים ב־30 הימים האחרונים
+        - אחר — דורש הסבר
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: קישורים למקורות
+      description: קישור רשמי לכנסת או קישורים לשני סקרים ארציים שפורסמו.
+      placeholder: קישור אחד בכל שורה
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: פרטיות
+      options:
+        - label: לא כללתי מידע אישי או רגיש.
+          required: true

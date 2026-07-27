@@ -1,0 +1,33 @@
+name: בעיית נגישות
+description: דווחו על קושי בשימוש, ניווט, קריאה או הפעלה.
+title: "[נגישות] "
+labels: ["accessibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        תודה על הדיווח. אין צורך לציין מצב רפואי או מידע אישי; תיאור הפעולה והמחסום מספיק.
+  - type: input
+    id: page
+    attributes:
+      label: כתובת העמוד
+      placeholder: https://…
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: איזו פעולה ניסיתם לבצע?
+    validations:
+      required: true
+  - type: textarea
+    id: barrier
+    attributes:
+      label: מה מנע את השלמת הפעולה?
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: דפדפן וטכנולוגיה מסייעת, אם רלוונטי
+      placeholder: לדוגמה Firefox + NVDA

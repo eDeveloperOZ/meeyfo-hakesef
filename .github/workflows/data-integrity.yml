@@ -1,0 +1,35 @@
+name: Data integrity
+
+on:
+  pull_request:
+    paths:
+      - data/**
+      - schemas/**
+      - scripts/build-data.ts
+      - scripts/validate-data.ts
+      - scripts/refresh-report.ts
+
+permissions:
+  contents: read
+
+jobs:
+  data-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate-data
+      - run: npm run build:data
+      - run: npm run refresh:report
+      - name: Upload data refresh report
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-refresh-report
+          path: docs/reports/data-refresh-*
+          if-no-files-found: error
