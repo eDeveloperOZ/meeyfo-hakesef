@@ -6,4 +6,5 @@ src/generated
 playwright-report
 test-results
 coverage
+*.sarif
 package-lock.json
