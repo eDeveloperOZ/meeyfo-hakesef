@@ -1,104 +1,41 @@
 {
-  "generatedAt": "2026-07-27T15:33:10.160Z",
-  "datasetVersion": "0.3.0",
+  "generatedAt": "2026-07-27T16:11:51.615Z",
+  "datasetVersion": "0.3.1",
   "records": {
-    "added": [
-      {
-        "id": "rec-20260726-yashar-001"
-      },
-      {
-        "id": "rec-20260726-miluimnikim-001"
-      },
-      {
-        "id": "rec-20260724-yashar-001"
-      },
-      {
-        "id": "rec-20260724-miluimnikim-001"
-      },
-      {
-        "id": "rec-20260723-yashar-001"
-      },
-      {
-        "id": "rec-20260722-yashar-001"
-      },
-      {
-        "id": "rec-20260722-yashar-002"
-      },
-      {
-        "id": "rec-20260721-yashar-001"
-      },
-      {
-        "id": "rec-20260721-yashar-002"
-      },
-      {
-        "id": "rec-20260721-yashar-003"
-      },
-      {
-        "id": "rec-20260720-miluimnikim-001"
-      },
-      {
-        "id": "rec-20260720-yashar-001"
-      },
-      {
-        "id": "rec-20260719-yashar-001"
-      },
-      {
-        "id": "rec-20260718-yashar-001"
-      },
-      {
-        "id": "rec-20260718-yashar-002"
-      }
-    ],
+    "added": [],
     "removed": [],
     "modified": []
   },
   "sources": {
-    "added": [
-      {
-        "id": "src-cec-election-date"
-      },
-      {
-        "id": "src-party-financing-law"
-      },
-      {
-        "id": "src-knesset-financing-46"
-      },
-      {
-        "id": "src-comptroller-financing-portal"
-      },
-      {
-        "id": "src-knesset-factions25"
-      },
-      {
-        "id": "src-poll-n12-2026-07-06"
-      },
-      {
-        "id": "src-poll-n12-2026-07-13"
-      },
-      {
-        "id": "src-poll-n12-2026-07-20"
-      },
-      {
-        "id": "src-comptroller-party-statements-current-cycle"
-      },
-      {
-        "id": "src-idi-parties"
-      },
-      {
-        "id": "src-party-inclusion-policy"
-      },
-      {
-        "id": "src-maya-angel-yaron-2024"
-      },
-      {
-        "id": "src-maya-adi-marom-2021"
-      },
-      {
-        "id": "src-eretzmuseum-amon-yariv"
-      }
-    ],
+    "added": [],
     "removed": [],
-    "modified": []
+    "modified": [
+      {
+        "id": "src-comptroller-party-statements-current-cycle",
+        "fields": {
+          "access_datetime": {
+            "before": "2026-07-27T18:07:48+03:00",
+            "after": "2026-07-27T18:37:00+03:00"
+          },
+          "extraction_datetime": {
+            "before": "2026-07-27T18:07:48+03:00",
+            "after": "2026-07-27T19:07:57+03:00"
+          },
+          "locator": {
+            "before": "חיפוש מתאריך 18/07/2026 ללא מסנן מפלגה; יצוא לאקסל של 16 תוצאות; 15 מהן לישויות הנכללות באתר",
+            "after": "יצוא Excel מלא של 1194 רשומות; סינון מקומי מתאריך 18/07/2026 הניב 16 תוצאות; 15 מהן לישויות הנכללות באתר"
+          },
+          "content_sha256": {
+            "before": "81d66bc6dd0d42feba94e93bf3d07cd4662038e68a47cbdfbd8e891f6cea7713",
+            "after": "a0ec47a86e30682c82cf1ba6b8a64facefabd4942825ef151d65a4e0289aea9b"
+          },
+          "notes": {
+            "before": "המערכת מציינת שמוצגות תרומות בסכום של 1000 ש״ח ומעלה; הקובץ הרשמי נשמר מקומית תחת private ומוחרג מ-Git; תוצאת זהות לא נכללה משום שהמפלגה אינה עומדת בכלל ההכללה הנוכחי",
+            "after": "המערכת מציינת שמוצגות תרומות בסכום של 1000 ש״ח ומעלה; הקובץ הרשמי המלא נשמר מקומית תחת private ומוחרג מ-Git; 1178 רשומות שקדמו למחזור ותוצאת זהות אחת לא נכללו"
+          }
+        }
+      }
+    ]
   },
   "changedAmounts": [],
   "changedSourceUrls": [],
