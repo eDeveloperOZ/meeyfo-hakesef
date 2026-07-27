@@ -38,7 +38,7 @@ export function RecordsList({
       </div>
       {sorted.length === 0 ? (
         <div className="empty-state">
-          <strong>טרם אותרו דיווחים רשמיים זמינים למחזור הבחירות הנוכחי</strong>
+          <strong>טרם אותרו דיווחים רשמיים זמינים מאז הבחירות לכנסת ה־25</strong>
           <p>
             נבדקו שער מימון המפלגות של מבקר המדינה ומקורות הכנסת. הבדיקה האחרונה מתועדת בעמוד
             המקורות ובמתודולוגיה.
@@ -58,6 +58,9 @@ export function RecordsList({
                   <span className={`record-kind record-kind-${record.category}`}>
                     {categoryLabels[record.category]}
                   </span>
+                  {record.in_statutory_election_period && (
+                    <span className="statutory-period-badge">בתקופת הבחירות הרשמית</span>
+                  )}
                   <strong>{formatAgorot(record.amount_agorot)}</strong>
                   <span>{formatHebrewDate(record.event_date)}</span>
                 </div>

@@ -35,7 +35,7 @@ export async function generateMetadata({
   return party
     ? {
         title: party.name_he,
-        description: `מקורות המימון המדווחים של ${party.name_he} למחזור הבחירות לכנסת ה־26.`,
+        description: `מקורות המימון המדווחים של ${party.name_he} מאז הבחירות לכנסת ה־25.`,
       }
     : {};
 }
@@ -50,6 +50,16 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
   const summary = calculateFinancialSummary(records, scope);
   const eligibilitySource = getSource(party.eligibility_source_id);
   const comptrollerSource = getSource("src-comptroller-financing-portal");
+  const recordCountBySource = records.reduce<Map<string, number>>((counts, record) => {
+    counts.set(record.source_id, (counts.get(record.source_id) ?? 0) + 1);
+    return counts;
+  }, new Map());
+  const sourceIds = new Set(recordCountBySource.keys());
+  if (eligibilitySource) sourceIds.add(eligibilitySource.source_id);
+  if (comptrollerSource) sourceIds.add(comptrollerSource.source_id);
+  const distinctSources = [...sourceIds]
+    .map((sourceId) => getSource(sourceId))
+    .filter((source): source is NonNullable<typeof source> => source !== undefined);
   const correctionUrl = `${siteConfig.githubUrl}/issues/new?template=incorrect-data.yml&title=${encodeURIComponent(`תיקון נתון: ${party.name_he}`)}&party=${encodeURIComponent(party.name_he)}`;
 
   return (
@@ -97,8 +107,8 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
           <h2 id="limitations-title">מגבלות ושלמות הנתונים</h2>
           <p>{scope.note_he}</p>
           <p>
-            ערבות מוצגת בנפרד ואינה נספרת ככסף שהתקבל. היעדר רשומה בקטגוריה מסוימת מסומן „לא דווח”
-            ולא כאפס.
+            ערבויות נכללות בכותרת ההכנסה המדווחת לפי החלטת הפרויקט, ומוצגות גם בנפרד כהתחייבות
+            מותנית שאינה מזומן שהתקבל. היעדר רשומה בקטגוריה מסוימת מסומן „לא דווח” ולא כאפס.
           </p>
           {party.notes && <p>{party.notes}</p>}
         </div>
@@ -110,24 +120,11 @@ export default async function PartyPage({ params }: { params: Promise<{ id: stri
           <h2 id="sources-title">מקורות</h2>
         </div>
         <ul>
-          {eligibilitySource && (
-            <li>
-              <SourceLink source={eligibilitySource} />
+          {distinctSources.map((source) => (
+            <li key={source.source_id}>
+              <SourceLink source={source} recordCount={recordCountBySource.get(source.source_id)} />
             </li>
-          )}
-          {comptrollerSource && (
-            <li>
-              <SourceLink source={comptrollerSource} />
-            </li>
-          )}
-          {records.map((record) => {
-            const source = getSource(record.source_id);
-            return source ? (
-              <li key={record.record_id}>
-                <SourceLink source={source} />
-              </li>
-            ) : null;
-          })}
+          ))}
         </ul>
       </section>
 

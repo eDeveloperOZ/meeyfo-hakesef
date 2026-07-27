@@ -1,0 +1,186 @@
+{
+  "generatedAt": "2026-07-27T20:20:00+03:00",
+  "sourceFileSha256": "a0ec47a86e30682c82cf1ba6b8a64facefabd4942825ef151d65a4e0289aea9b",
+  "sourceRowCount": 1194,
+  "includedRowCount": 998,
+  "excludedRowCount": 196,
+  "includedByParty": [
+    {
+      "partyId": "likud",
+      "nameHe": "הליכוד",
+      "recordCount": 3,
+      "donationCount": 3,
+      "guaranteeCount": 0,
+      "donationAgorot": 750000,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "yesh-atid",
+      "nameHe": "יש עתיד",
+      "recordCount": 97,
+      "donationCount": 97,
+      "guaranteeCount": 0,
+      "donationAgorot": 19850000,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "shas",
+      "nameHe": "ש״ס",
+      "recordCount": 1,
+      "donationCount": 1,
+      "guaranteeCount": 0,
+      "donationAgorot": 100000,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "blue-white",
+      "nameHe": "כחול לבן",
+      "recordCount": 22,
+      "donationCount": 22,
+      "guaranteeCount": 0,
+      "donationAgorot": 5349900,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "religious-zionism",
+      "nameHe": "הציונות הדתית",
+      "recordCount": 7,
+      "donationCount": 7,
+      "guaranteeCount": 0,
+      "donationAgorot": 1730000,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "yisrael-beiteinu",
+      "nameHe": "ישראל ביתנו",
+      "recordCount": 37,
+      "donationCount": 37,
+      "guaranteeCount": 0,
+      "donationAgorot": 7180000,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "hadash-taal",
+      "nameHe": "חד״ש–תע״ל",
+      "recordCount": 15,
+      "donationCount": 15,
+      "guaranteeCount": 0,
+      "donationAgorot": 2593400,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "state-right",
+      "nameHe": "הימין הממלכתי",
+      "recordCount": 21,
+      "donationCount": 21,
+      "guaranteeCount": 0,
+      "donationAgorot": 4171800,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "yashar",
+      "nameHe": "ישר!",
+      "recordCount": 212,
+      "donationCount": 189,
+      "guaranteeCount": 23,
+      "donationAgorot": 146194800,
+      "guaranteeAgorot": 1289800000,
+      "statutoryIncomeAgorot": 9730000
+    },
+    {
+      "partyId": "beyachad",
+      "nameHe": "ביחד",
+      "recordCount": 28,
+      "donationCount": 19,
+      "guaranteeCount": 9,
+      "donationAgorot": 16300000,
+      "guaranteeAgorot": 1000000000,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "democrats",
+      "nameHe": "הדמוקרטים",
+      "recordCount": 493,
+      "donationCount": 493,
+      "guaranteeCount": 0,
+      "donationAgorot": 85243100,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    },
+    {
+      "partyId": "miluimnikim",
+      "nameHe": "בית ציוני–המילואימניקים",
+      "recordCount": 45,
+      "donationCount": 37,
+      "guaranteeCount": 8,
+      "donationAgorot": 16988200,
+      "guaranteeAgorot": 141200000,
+      "statutoryIncomeAgorot": 3800000
+    },
+    {
+      "partyId": "economic-party",
+      "nameHe": "המפלגה הכלכלית",
+      "recordCount": 17,
+      "donationCount": 17,
+      "guaranteeCount": 0,
+      "donationAgorot": 6077500,
+      "guaranteeAgorot": 0,
+      "statutoryIncomeAgorot": 0
+    }
+  ],
+  "excludedEntities": [
+    {
+      "sourcePartyName": "זהות – תנועה ישראלית יהודית",
+      "recordCount": 95,
+      "amountAgorot": 17091300,
+      "types": {
+        "תרומה": 95
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי"
+    },
+    {
+      "sourcePartyName": "ביחד נצליח",
+      "recordCount": 3,
+      "amountAgorot": 10419000,
+      "types": {
+        "ערבות": 1,
+        "תרומה": 2
+      },
+      "reasonHe": "ישות נפרדת מבנט 2026 ואינה עומדת בכלל ההכללה"
+    },
+    {
+      "sourcePartyName": "צבר מפלגת הצעירים של ישראל",
+      "recordCount": 2,
+      "amountAgorot": 92500000,
+      "types": {
+        "הלוואה": 1,
+        "ערבות": 1
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי; לכן הוחרגו גם הערבות וגם הלוואת דיסקונט"
+    },
+    {
+      "sourcePartyName": "לזוז",
+      "recordCount": 96,
+      "amountAgorot": 18445100,
+      "types": {
+        "תרומה": 96
+      },
+      "reasonHe": "אינה עומדת בכלל ההכללה הנוכחי"
+    }
+  ],
+  "exactDuplicateCompositeKeys": [
+    {
+      "key": "miluimnikim|קינן עמליה|2026-05-08|100000|donation",
+      "count": 2
+    }
+  ],
+  "compositeKeyDefinition": "party_id|counterparty_full_name_he|event_date|amount_agorot|category"
+}

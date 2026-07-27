@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { partiesByAxis, data } from "../lib/data";
+import { AxisPartyLink } from "./axis-party-link";
 
 export function AxisNavigation() {
   const positionById = new Map(
@@ -14,30 +14,42 @@ export function AxisNavigation() {
 
   return (
     <nav className="axis-nav" aria-label="ניווט בין מפלגות לפי הציר המדיני־ביטחוני">
-      <p className="axis-nav-label">
-        <span>ימין</span>
-        <span>הציר המדיני־ביטחוני</span>
-        <span>שמאל</span>
-      </p>
-      <div className="axis-scroll" tabIndex={0} aria-label="גלילה אופקית בין המפלגות">
-        <ul className="axis-list">
-          {onAxis.map((party) => (
-            <li key={party.party_id}>
-              <Link href={`/party/${party.party_id}`}>{party.name_he}</Link>
-            </li>
-          ))}
-        </ul>
+      <div className="axis-row">
+        <p className="axis-nav-label">
+          <span>ימין</span>
+          <strong>הציר המדיני־ביטחוני</strong>
+          <span>שמאל</span>
+        </p>
+        <div className="axis-scroll" tabIndex={0} aria-label="גלילה אופקית לאורך הציר">
+          <ul className="axis-list">
+            {onAxis.map((party) => (
+              <li key={party.party_id}>
+                <AxisPartyLink
+                  href={`/party/${party.party_id}`}
+                  name={party.name_he}
+                  color={party.brand_color}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <details className="off-axis-nav">
-        <summary>מפלגות שאינן ממוקמות בבירור על הציר המדיני־ביטחוני</summary>
-        <ul>
-          {offAxis.map((party) => (
-            <li key={party.party_id}>
-              <Link href={`/party/${party.party_id}`}>{party.name_he}</Link>
-            </li>
-          ))}
-        </ul>
-      </details>
+      <div className="axis-row off-axis-nav">
+        <p className="off-axis-label">מפלגות שאינן ממוקמות בבירור על הציר המדיני־ביטחוני</p>
+        <div className="axis-scroll" tabIndex={0} aria-label="גלילה אופקית בין מפלגות מחוץ לציר">
+          <ul className="axis-list">
+            {offAxis.map((party) => (
+              <li key={party.party_id}>
+                <AxisPartyLink
+                  href={`/party/${party.party_id}`}
+                  name={party.name_he}
+                  color={party.brand_color}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }

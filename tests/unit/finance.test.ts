@@ -25,6 +25,7 @@ function record(
     cash_received: category !== "guarantee" && category !== "debt_liability",
     contingent: category === "guarantee",
     repayment_expected: category.includes("loan"),
+    in_statutory_election_period: true,
     status: "active",
     source_id: "source",
     official_record_id: "",
@@ -46,7 +47,7 @@ const comparableScope: PartyFinancialScope = {
 };
 
 describe("financial calculations", () => {
-  it("separates received money, guarantees and liabilities", () => {
+  it("counts guarantees in reported income while keeping them separate from cash", () => {
     const summary = calculateFinancialSummary(
       [
         record("donation", "donation", 1_000_00),
@@ -57,10 +58,13 @@ describe("financial calculations", () => {
       ],
       comparableScope,
     );
-    expect(summary.reportedInflows).toBe(3_000_00);
+    expect(summary.reportedIncome).toBe(11_000_00);
+    expect(summary.reportedCashInflows).toBe(3_000_00);
     expect(summary.reportedGuarantees).toBe(8_000_00);
+    expect(summary.statutoryIncome).toBe(11_000_00);
+    expect(summary.statutoryGuarantees).toBe(8_000_00);
     expect(summary.reportedLiabilities).toBe(750_00);
-    expect(summary.netPosition).toBe(2_250_00);
+    expect(summary.netPosition).toBe(10_250_00);
   });
 
   it("does not calculate net position when scope is not comparable", () => {

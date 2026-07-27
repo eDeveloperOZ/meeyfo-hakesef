@@ -20,16 +20,36 @@ export function MetricHeadline({
         {hasNet
           ? formatAgorot(summary.netPosition!)
           : hasReportedRecords
-            ? formatAgorot(summary.reportedInflows)
+            ? formatAgorot(summary.reportedIncome)
             : "לא דווח"}
       </p>
       <p className="metric-subtitle">
         {hasNet
           ? "תקבולים וחובות שנבדקו לאותו חלון מדידה"
           : hasReportedRecords
-            ? "סכום הרשומות שסומנו ככסף שהתקבל; ערבויות וחובות מוצגים בנפרד"
-            : "לא אותרה רשומת מימון זמינה בהיקף שנבדק; אין לפרש זאת כאפס"}
+            ? "סך התקבולים והערבויות שדווחו מאז הבחירות לכנסת ה־25; הערבויות מסומנות כהתחייבות מותנית"
+            : "לא אותרה רשומת מימון זמינה מאז הבחירות לכנסת ה־25; אין לפרש זאת כאפס"}
       </p>
+      {hasReportedRecords && (
+        <dl className="metric-secondary">
+          <div>
+            <dt>מתוכם כסף או אשראי שהתקבלו</dt>
+            <dd>{formatAgorot(summary.reportedCashInflows)}</dd>
+          </div>
+          <div>
+            <dt>מתוכם ערבויות</dt>
+            <dd>{formatAgorot(summary.reportedGuarantees)}</dd>
+          </div>
+          <div>
+            <dt>מתוך ההכנסה המדווחת בתקופת הבחירות הרשמית</dt>
+            <dd>{formatAgorot(summary.statutoryIncome)}</dd>
+          </div>
+          <div>
+            <dt>ערבויות בתקופת הבחירות הרשמית</dt>
+            <dd>{formatAgorot(summary.statutoryGuarantees)}</dd>
+          </div>
+        </dl>
+      )}
       {!hasNet && (
         <div className="state-card" role="status">
           <strong>אין די מידע רשמי לחישוב יתרה נטו</strong>
