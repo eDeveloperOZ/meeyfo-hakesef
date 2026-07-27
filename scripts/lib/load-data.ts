@@ -55,6 +55,7 @@ export const csvContracts = {
     "eligibility_source_id",
     "website_url",
     "logo_file",
+    "mark_he",
     "brand_color",
     "axis_position_id",
     "notes",

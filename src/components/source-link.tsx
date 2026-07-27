@@ -18,7 +18,15 @@ const authorityLabels: Record<Source["authority"], string> = {
   reference_only: "מקור עזר",
 };
 
-export function SourceLink({ source, compact = false }: { source: Source; compact?: boolean }) {
+export function SourceLink({
+  source,
+  compact = false,
+  recordCount,
+}: {
+  source: Source;
+  compact?: boolean;
+  recordCount?: number;
+}) {
   return (
     <a
       className="source-link"
@@ -33,7 +41,11 @@ export function SourceLink({ source, compact = false }: { source: Source; compac
       <span className="sr-only">(נפתח בחלון חדש)</span>
       {!compact && (
         <span className="source-verified">
-          אומת לאחרונה: {formatHebrewDate(source.access_datetime.slice(0, 10))}
+          <span className="verification-chip">מאומת</span>
+          נבדק לאחרונה: {formatHebrewDate(source.access_datetime.slice(0, 10))}
+          {recordCount !== undefined && (
+            <> · {recordCount === 1 ? "רשומה אחת" : `${recordCount} רשומות`} מסתמכות על מקור זה</>
+          )}
         </span>
       )}
     </a>

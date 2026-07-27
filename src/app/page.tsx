@@ -3,10 +3,18 @@ import { ArrowLeft, FileWarning } from "lucide-react";
 import { CountdownBanner } from "../components/countdown-banner";
 import { PartyCard } from "../components/party-card";
 import { partiesByAxis, data } from "../lib/data";
-import { formatHebrewDateTime } from "../lib/format";
+import { formatAgorot, formatHebrewDateTime } from "../lib/format";
+import { activeRecords } from "../lib/finance";
 import { siteConfig } from "../../config/site";
 
 const addPartyUrl = `${siteConfig.githubUrl}/issues/new?template=add-party.yml`;
+const currentRecords = activeRecords(data.financingRecords);
+const totalDonations = currentRecords
+  .filter((record) => record.category === "donation")
+  .reduce((sum, record) => sum + record.amount_agorot, 0);
+const totalGuarantees = currentRecords
+  .filter((record) => record.category === "guarantee")
+  .reduce((sum, record) => sum + record.amount_agorot, 0);
 
 export default function HomePage() {
   return (
@@ -22,15 +30,28 @@ export default function HomePage() {
               רשמיים, עם קישור לכל מקור ועם סימון ברור של מידע חסר.
             </p>
           </div>
-          <aside className="hero-note" aria-label="עקרונות הפרויקט">
-            <span className="hero-note-number">01</span>
-            <strong>מציגים עובדות. לא מסיקים מניעים.</strong>
-            <p>ערבות אינה תרומה, הלוואה אינה הכנסה, וחוסר בדיווח אינו אפס.</p>
-          </aside>
         </div>
       </section>
 
       <div className="container">
+        <section className="cycle-stats" aria-label="מספרי התקופה">
+          <Link href="/data">
+            <span>תרומות שדווחו</span>
+            <strong>{formatAgorot(totalDonations)}</strong>
+          </Link>
+          <Link href="/methodology">
+            <span>ערבויות שדווחו</span>
+            <strong>{formatAgorot(totalGuarantees)}</strong>
+          </Link>
+          <Link href="/methodology">
+            <span>מפלגות ורשימות</span>
+            <strong>{data.parties.length}</strong>
+          </Link>
+          <Link href="/data">
+            <span>רשומות רשמיות</span>
+            <strong>{currentRecords.length}</strong>
+          </Link>
+        </section>
         <CountdownBanner />
         <p className="last-updated">
           עודכן לאחרונה:{" "}
@@ -45,7 +66,8 @@ export default function HomePage() {
             <h2 id="methodology-banner-title">איך לקרוא את הנתונים</h2>
             <p>
               האתר מאגד מידע ציבורי שכבר פורסם, אינו קשור למפלגה כלשהי ואינו מסיק מניעים. כל נתון
-              כספי מחייב מקור רשמי; מידע חסר מסומן, ותיקונים מתקבלים דרך GitHub.
+              כספי מחייב מקור רשמי; ערבויות מסומנות כהתחייבות מותנית; מידע חסר מסומן, ותיקונים
+              מתקבלים דרך GitHub.
             </p>
           </div>
           <Link href="/methodology">

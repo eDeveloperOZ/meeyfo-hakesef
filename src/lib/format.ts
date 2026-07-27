@@ -4,10 +4,11 @@ export function formatAgorot(amountAgorot: number): string {
   }
   const amountShekels = amountAgorot / 100;
   const fractionDigits = amountAgorot % 100 === 0 ? 0 : 2;
-  return `₪${new Intl.NumberFormat("he-IL", {
+  const formatted = new Intl.NumberFormat("he-IL", {
     minimumFractionDigits: fractionDigits,
     maximumFractionDigits: fractionDigits,
-  }).format(amountShekels)}`;
+  }).format(amountShekels);
+  return `\u200F${formatted}\u00A0₪`;
 }
 
 export function formatHebrewDate(date: string): string {
