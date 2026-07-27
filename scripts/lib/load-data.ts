@@ -14,6 +14,7 @@ import {
   partySchema,
   personRoleSchema,
   personSchema,
+  profileCheckSchema,
   sourceSchema,
   type AxisPosition,
   type Correction,
@@ -26,6 +27,7 @@ import {
   type PartyNameAlias,
   type Person,
   type PersonRole,
+  type ProfileCheck,
   type Source,
 } from "../../schemas";
 
@@ -36,6 +38,7 @@ export type Dataset = {
   persons: Person[];
   organizations: Organization[];
   personRoles: PersonRole[];
+  profileChecks: ProfileCheck[];
   sources: Source[];
   externalLinks: ExternalLink[];
   corrections: Correction[];
@@ -102,6 +105,7 @@ export const csvContracts = {
     "verified_at",
     "status",
   ],
+  "profile_checks.csv": ["person_id", "checked_at", "sources_checked", "outcome"],
   "sources.csv": [
     "source_id",
     "authority",
@@ -186,6 +190,7 @@ export function loadDataset(root = process.cwd()): Dataset {
     persons: parseCsv(root, "persons.csv", personSchema),
     organizations: parseCsv(root, "organizations.csv", organizationSchema),
     personRoles: parseCsv(root, "person_roles.csv", personRoleSchema),
+    profileChecks: parseCsv(root, "profile_checks.csv", profileCheckSchema),
     sources: parseCsv(root, "sources.csv", sourceSchema),
     externalLinks: parseCsv(root, "external_links.csv", externalLinkSchema),
     corrections: parseCsv(root, "corrections.csv", correctionSchema),

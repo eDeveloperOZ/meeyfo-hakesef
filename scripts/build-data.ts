@@ -77,6 +77,7 @@ async function finishBuild(): Promise<void> {
       persons: dataset.persons.length,
       organizations: dataset.organizations.length,
       sources: dataset.sources.length,
+      profileChecks: dataset.profileChecks.length,
     },
     files: [
       "master-financing-records.csv",

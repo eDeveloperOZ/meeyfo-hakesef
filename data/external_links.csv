@@ -1,1 +1,24 @@
 link_id,person_id,org_id,kind,url,label_he
+link-akirov-wikipedia,person-a920caafdede,,wikipedia,https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A4%D7%A8%D7%93_%D7%90%D7%A7%D7%99%D7%A8%D7%95%D7%91,ויקיפדיה
+link-lowy-wikipedia,person-16ff61c4363c,,wikipedia,https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A0%D7%A7_%D7%9C%D7%95%D7%90%D7%99,ויקיפדיה
+link-lowy-institute-bio,person-16ff61c4363c,,corporate_bio,https://www.lowyinstitute.org/people/frank-lowy,ביוגרפיה מוסדית
+link-shoham-wikipedia,person-17d0f14452a4,,wikipedia,https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%A9%D7%95%D7%94%D7%9D,ויקיפדיה
+link-shoham-stanford,person-17d0f14452a4,,corporate_bio,https://profiles.stanford.edu/yoav-shoham?tab=bio,ביוגרפיה ב-Stanford
+link-nacht-wikipedia,person-69f638f58c15,,wikipedia,https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%99%D7%95%D7%A1_%D7%A0%D7%9B%D7%98,ויקיפדיה
+link-bennett-wikipedia,person-71d8f7e8d2c6,,wikipedia,https://he.wikipedia.org/wiki/%D7%A0%D7%A4%D7%AA%D7%9C%D7%99_%D7%91%D7%A0%D7%98,ויקיפדיה
+link-manelis-wikipedia,person-8948ee9aee08,,wikipedia,https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%A0%D7%9F_%D7%9E%D7%A0%D7%9C%D7%99%D7%A1,ויקיפדיה
+link-raz-levy-forum-dvorah,person-b46bfa33676f,,corporate_bio,https://www.forumdvorah.org.il/expert/donna,ביוגרפיה מוסדית
+link-harlap-wikipedia,person-c52397009b56,,wikipedia,https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%97%D7%A8%D7%9C%22%D7%A4,ויקיפדיה
+link-harlap-colmobil,person-c52397009b56,,corporate_bio,https://www.colmobil.co.il/organization/,ביוגרפיה בכלמוביל
+link-adest-solaredge,person-0e58fe6154ea,,corporate_bio,https://investors.solaredge.com/management/meir-adest,ביוגרפיה ב-SolarEdge
+link-zilka-10d,person-af28a7ac1f4f,,corporate_bio,https://www.10d.vc/team/,ביוגרפיה ב-10D
+link-kaplan-unity,person-9103633eb27e,,corporate_bio,https://unity.com/kr/blog/ironsource-expands-its-ad-exchange-with-powerful-new-tools,פרופיל ב-ironSource
+link-amon-yariv-museum,person-amon-yariv,,corporate_bio,https://hope.eretzmuseum.org.il/photographers/%D7%90%D7%9E%D7%95%D7%9F-%D7%99%D7%A8%D7%99%D7%91/,ביוגרפיה מוסדית
+link-eisenkot-wikipedia,person-a35e69d5059b,,wikipedia,https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%99_%D7%90%D7%99%D7%96%D7%A0%D7%A7%D7%95%D7%98,ויקיפדיה
+link-irad-ben-gal-wikipedia,person-d4ca7c162c5d,,wikipedia,https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%A8%D7%93_%D7%91%D7%9F-%D7%92%D7%9C,ויקיפדיה
+link-irad-ben-gal-tau,person-d4ca7c162c5d,,corporate_bio,https://www.tau.ac.il/profile/bengal,ביוגרפיה באוניברסיטת תל אביב
+link-dov-pekelman-tau,person-7daff87722e4,,corporate_bio,https://www.tau.ac.il/profile/dovpekelman,ביוגרפיה באוניברסיטת תל אביב
+link-eyal-waldman-weizmann,person-cf4d5d7ea86f,,corporate_bio,https://heb.wis-wander.weizmann.ac.il/magazine/n-6605,פרופיל במכון ויצמן
+link-micha-kaufman-fiverr,person-8f49ce0a0af5,,corporate_bio,https://investors.fiverr.com/management/management-1,ביוגרפיה ב-Fiverr
+link-nir-zohar-wix,person-34bff32478e9,,corporate_bio,https://www.wix.com/blog/profile/nir-zohar/author,ביוגרפיה ב-Wix
+link-avi-naor-or-yarok,person-81c78af411a8,,corporate_bio,https://www.oryarok.org.il/%D7%94%D7%A1%D7%99%D7%A4%D7%95%D7%A8%D7%A9%D7%9C%D7%A0%D7%95,ביוגרפיה באור ירוק

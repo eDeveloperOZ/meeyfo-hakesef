@@ -9,4 +9,5 @@ export * from "./party-name-alias";
 export * from "./party-financial-scope";
 export * from "./person";
 export * from "./person-role";
+export * from "./profile-check";
 export * from "./source";

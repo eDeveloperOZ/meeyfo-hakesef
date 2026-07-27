@@ -9,6 +9,7 @@ const emptyDataset: Dataset = {
   persons: [],
   organizations: [],
   personRoles: [],
+  profileChecks: [],
   sources: [],
   externalLinks: [],
   corrections: [],

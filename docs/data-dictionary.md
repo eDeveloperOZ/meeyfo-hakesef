@@ -11,6 +11,7 @@
 | `persons.csv`                | אנשים שפורסמו כדין          | `person_id`        |
 | `organizations.csv`          | ארגונים וישויות משפטיות     | `org_id`           |
 | `person_roles.csv`           | טענות תפקיד עסקיות מתועדות  | `assertion_id`     |
+| `profile_checks.csv`         | יומן בדיקות כיסוי לפרופילים | `person_id`        |
 | `sources.csv`                | מטא־נתוני מקור ואימות       | `source_id`        |
 | `external_links.csv`         | קישורי הרחבה שאינם ראיה     | `link_id`          |
 | `corrections.csv`            | יומן תיקונים                | `correction_id`    |
@@ -50,6 +51,14 @@
 `verification_status` מתאר אימות סמנטי ואינו שקול לסטטוס HTTP. `is_primary`
 מסמן מקור ראייתי ראשי. מקורות `reference_only` מותרים לזכאות, לציר ולקישורי
 הרחבה אך אסורים לרשומות מימון.
+
+### `profile_checks.csv`
+
+הקובץ מתעד בדיקה של כל אדם בשכבה 1 או 2. `checked_at` הוא תאריך הבדיקה;
+`sources_checked` הוא רשימת משטחי החיפוש שהופרדה בתו `|`; ו־`outcome` הוא אחת
+מארבע תוצאות: `enriched`, `links_only`, `no_reliable_match` או
+`ambiguous_identity`. התוצאה אינה הערכה על האדם אלא תיעוד של יכולת ההתאמה
+למקורות לפי כללי הזהות של הפרויקט.
 
 ### `party_financial_scopes.csv`
 

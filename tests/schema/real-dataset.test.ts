@@ -64,6 +64,26 @@ describe("real canonical dataset", () => {
     expect(validateHeaderPrivacy(csvContracts)).toEqual([]);
   });
 
+  it("records an auditable profile check for every Tier-1 and Tier-2 person", () => {
+    const totals = new Map<string, { amount: number; hasGuarantee: boolean }>();
+    for (const record of dataset.financingRecords) {
+      if (!record.person_id || record.status === "returned" || record.status === "superseded") {
+        continue;
+      }
+      const current = totals.get(record.person_id) ?? { amount: 0, hasGuarantee: false };
+      current.amount += record.amount_agorot;
+      current.hasGuarantee ||= record.category === "guarantee";
+      totals.set(record.person_id, current);
+    }
+    const eligible = [...totals]
+      .filter(([, total]) => total.hasGuarantee || total.amount >= 1_000_000)
+      .map(([personId]) => personId);
+    const checked = new Set(dataset.profileChecks.map(({ person_id }) => person_id));
+
+    expect(eligible).toHaveLength(153);
+    expect(eligible.every((personId) => checked.has(personId))).toBe(true);
+  });
+
   it("never treats guarantees or liabilities as received cash", () => {
     for (const record of dataset.financingRecords) {
       if (record.category === "guarantee" || record.category === "debt_liability") {
