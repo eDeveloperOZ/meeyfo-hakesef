@@ -14,7 +14,7 @@
     "build": "next build",
     "lint": "eslint . --max-warnings=0",
     "lint:neutrality": "tsx scripts/neutrality-lint.ts",
-    "typecheck": "next typegen && tsc --noEmit",
+    "typecheck": "npm run build:data && next typegen && tsc --noEmit",
     "validate-data": "tsx scripts/validate-data.ts",
     "build:data": "tsx scripts/build-data.ts",
     "check:links": "tsx scripts/check-links.ts",
