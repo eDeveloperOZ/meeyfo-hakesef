@@ -56,10 +56,22 @@ test("download dialog traps focus and restores it to its trigger", async ({ page
   await expect(trigger).toBeFocused();
 });
 
-test("the financing visualization has a semantic table equivalent", async ({ page }) => {
-  await page.goto(`/party/${dataset.parties[0]!.party_id}`);
-  await expect(page.locator(".chart-shell svg")).toHaveAttribute("aria-hidden", "true");
-  const table = page.getByRole("table");
-  await expect(table).toBeVisible();
-  await expect(table.locator("th")).not.toHaveCount(0);
+test("financing visualizations expose Hebrew labels and adjacent table equivalents", async ({
+  page,
+}) => {
+  await page.goto("/party/yashar");
+  const charts = page.locator("svg[role='img']");
+  expect(await charts.count()).toBeGreaterThan(3);
+  for (let index = 0; index < (await charts.count()); index += 1) {
+    await expect(charts.nth(index)).toHaveAttribute("aria-label", /[\u0590-\u05FF]/);
+  }
+
+  const tableDisclosures = page.locator(".chart-table-disclosure");
+  await expect(tableDisclosures).toHaveCount(3);
+  for (let index = 0; index < (await tableDisclosures.count()); index += 1) {
+    await tableDisclosures.nth(index).locator("summary").click();
+    const table = tableDisclosures.nth(index).getByRole("table");
+    await expect(table).toBeVisible();
+    await expect(table.locator("th")).not.toHaveCount(0);
+  }
 });

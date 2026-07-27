@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowDown, ArrowLeft, FileCheck2, FileWarning } from "lucide-react";
 import { CountdownBanner } from "../components/countdown-banner";
+import { PartyComparisonChart } from "../components/party-comparison-chart";
 import { PartyCard } from "../components/party-card";
 import { partiesByAxis, data } from "../lib/data";
 import { formatAgorot, formatHebrewDateTime } from "../lib/format";
@@ -90,6 +91,8 @@ export default function HomePage() {
       </section>
 
       <div className="home-content container">
+        <PartyComparisonChart parties={data.parties} records={data.financingRecords} />
+
         <CountdownBanner />
 
         <section className="methodology-banner" aria-labelledby="methodology-banner-title">
