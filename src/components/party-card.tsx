@@ -6,9 +6,9 @@ import { getPartyRecords, getPartyScope } from "../lib/data";
 import { PartyMark } from "./party-mark";
 
 const statusLabels: Record<Party["status"], string> = {
-  knesset: "מיוצגת בכנסת",
+  knesset: "מיוצגת בכנסת הנוכחית",
   polled: "נכללה לפי כלל הסקרים",
-  owner_exception: "חריג מתועד למדיניות",
+  owner_exception: "נכללה כחריג מתועד",
 };
 
 export function PartyCard({ party }: { party: Party }) {
@@ -28,11 +28,11 @@ export function PartyCard({ party }: { party: Party }) {
           <span>{statusLabels[party.status]}</span>
           <span className="party-card-metrics">
             <span>
-              <span>מקורות שדווחו</span>
+              <span>הכנסה מדווחת</span>
               <strong>{hasRecords ? formatAgorot(summary.reportedIncome) : "לא דווח"}</strong>
             </span>
             <span>
-              <span>ערבויות</span>
+              <span>מתוכה ערבויות</span>
               <strong>
                 {summary.categoryTotals.guarantee === null
                   ? "לא דווח"

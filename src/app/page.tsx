@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, FileWarning } from "lucide-react";
+import { ArrowDown, ArrowLeft, FileCheck2, FileWarning } from "lucide-react";
 import { CountdownBanner } from "../components/countdown-banner";
 import { PartyCard } from "../components/party-card";
 import { partiesByAxis, data } from "../lib/data";
@@ -15,50 +15,82 @@ const totalDonations = currentRecords
 const totalGuarantees = currentRecords
   .filter((record) => record.category === "guarantee")
   .reduce((sum, record) => sum + record.amount_agorot, 0);
+const totalReportedIncome = totalDonations + totalGuarantees;
 
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <div className="hero-grid container">
-          <div>
+      <section className="home-hero">
+        <div className="home-hero-grid container">
+          <div className="home-hero-copy">
             <p className="eyebrow">שקיפות במימון מפלגות · הבחירות לכנסת ה־26</p>
             <h1>{siteConfig.nameHe}</h1>
             <p className="hero-tagline">{siteConfig.taglineHe}</p>
             <p className="hero-description">
-              ריכוז נגיש של תרומות, ערבויות, הלוואות, מימון ציבורי וחובות — כפי שדווחו במקורות
-              רשמיים, עם קישור לכל מקור ועם סימון ברור של מידע חסר.
+              תמונת מצב נגישה של תרומות, ערבויות, הלוואות, מימון ציבורי וחובות — מתוך מקורות
+              רשמיים בלבד.
             </p>
+            <div className="home-hero-actions">
+              <a className="primary-button" href="#parties-title">
+                לבדיקת המפלגות
+                <ArrowDown aria-hidden="true" size={18} />
+              </a>
+              <Link className="secondary-button" href="/methodology">
+                איך חישבנו
+              </Link>
+            </div>
+          </div>
+
+          <aside className="home-snapshot" aria-label="תמונת מצב כספית">
+            <div className="snapshot-heading">
+              <span className="snapshot-icon" aria-hidden="true">
+                <FileCheck2 size={20} />
+              </span>
+              <div>
+                <p>סך ההכנסה המדווחת באתר</p>
+                <span>תרומות וערבויות יחד</span>
+              </div>
+            </div>
+            <strong className="snapshot-total">{formatAgorot(totalReportedIncome)}</strong>
+            <dl className="snapshot-breakdown">
+              <div>
+                <dt>תרומות</dt>
+                <dd>{formatAgorot(totalDonations)}</dd>
+              </div>
+              <div>
+                <dt>
+                  ערבויות
+                  <small>התחייבות מותנית</small>
+                </dt>
+                <dd>{formatAgorot(totalGuarantees)}</dd>
+              </div>
+            </dl>
+            <p className="snapshot-note">
+              הסכום משקף רשומות פעילות במאגר ואינו כולל מימון שלא פורסם במקור רשמי.
+            </p>
+          </aside>
+        </div>
+
+        <div className="home-release-strip">
+          <div className="container">
+            <span>
+              <strong>{data.parties.length}</strong> מפלגות ורשימות
+            </span>
+            <span>
+              <strong>{currentRecords.length}</strong> רשומות רשמיות
+            </span>
+            <span>
+              עודכן{" "}
+              <time dateTime={data.release.releasedAt}>
+                {formatHebrewDateTime(data.release.releasedAt)}
+              </time>
+            </span>
           </div>
         </div>
       </section>
 
-      <div className="container">
-        <section className="cycle-stats" aria-label="מספרי התקופה">
-          <Link href="/data">
-            <span>תרומות שדווחו</span>
-            <strong>{formatAgorot(totalDonations)}</strong>
-          </Link>
-          <Link href="/methodology">
-            <span>ערבויות שדווחו</span>
-            <strong>{formatAgorot(totalGuarantees)}</strong>
-          </Link>
-          <Link href="/methodology">
-            <span>מפלגות ורשימות</span>
-            <strong>{data.parties.length}</strong>
-          </Link>
-          <Link href="/data">
-            <span>רשומות רשמיות</span>
-            <strong>{currentRecords.length}</strong>
-          </Link>
-        </section>
+      <div className="home-content container">
         <CountdownBanner />
-        <p className="last-updated">
-          עודכן לאחרונה:{" "}
-          <time dateTime={data.release.releasedAt}>
-            {formatHebrewDateTime(data.release.releasedAt)}
-          </time>
-        </p>
 
         <section className="methodology-banner" aria-labelledby="methodology-banner-title">
           <FileWarning aria-hidden="true" />
@@ -79,11 +111,11 @@ export default function HomePage() {
         <section className="party-section" aria-labelledby="parties-title">
           <div className="section-heading section-heading-split">
             <div>
-              <p className="section-kicker">לפי הציר המדיני־ביטחוני</p>
+              <p className="section-kicker">תמונת מצב לפי מפלגה</p>
               <h2 id="parties-title">מפלגות ורשימות</h2>
             </div>
             <p>
-              הסדר הוא המחשה עריכתית של אפיון מקובל. מפלגות שאין להן מיקום ברור מופיעות במסלול נפרד.
+              בחרו מפלגה כדי לראות את הסכום המדווח, הפירוט המלא והמקורות הרשמיים שעליהם הוא מבוסס.
             </p>
           </div>
           <div className="party-grid">
